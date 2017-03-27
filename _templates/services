@@ -1,0 +1,12 @@
+---
+layout: about-us
+title: {{ title }}
+date: {{ date }}
+modified:
+excerpt:
+image:
+  feature:
+  teaser:
+  thumb:
+ads: false
+---

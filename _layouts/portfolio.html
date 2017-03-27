@@ -1,0 +1,26 @@
+---
+layout: default-white
+---
+
+<div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+			<div class="page-image">
+				<img src="{{ page.featured-image }}" alt="{{ page.title }}" />
+			</div>
+			<div class="portfolio-intro">
+				<h6 class="client">{{ page.client }}</h6>
+				<h4 class="portfolio-title">{{ page.title }}</h4>
+				<p class="page-excerpt" itemprop="description">{{ page.excerpt | strip_html }}</p>
+			</div>
+		<div class="inner">
+			<div id="content" class="page-content" itemprop="articleBody">
+			{{ content }}
+			</div><!-- /.content -->
+		</div><!-- /.inner -->
+		<div class="PageNavigation">
+			<a class="prev animsition-link" href="{{page.previous.url}}">{% if page.previous.url %}Previous: {{page.previous.title}}{% endif %}</a>
+		 <a class="next animsition-link" href="{{page.next.url}}">{% if page.next.url %}Next: {{page.next.title}}{% endif %}</a>
+		</div>
+		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
+	</article><!-- ./wrap -->
+</div><!-- /#main -->

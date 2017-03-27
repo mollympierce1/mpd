@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+
+  <body id="js-body">
+    <div class="page-white animsition">
+    {% include browser-upgrade.html %}
+    {% include header.html %}
+
+    <div class="container">
+      {{ content }}
+    </div>
+    <div class="block">
+    {% include footer.html %}
+  </div>
+    </div>
+  </body>
+  {% include animsition.html %}
+</html>

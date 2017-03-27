@@ -1,0 +1,33 @@
+---
+layout: default
+type: archive
+---
+
+<div class="archive-description">
+  <h1 class="archive-title">{{ page.category }} Archive</h1>
+  {{ content }}
+</div>
+
+<div class="wrap">
+{% if site.categories[page.category] %}
+  <div class="group-year">
+    {% for page in site.categories[page.category] %}
+      {% capture this_year %}{{ page.date | date: "%Y" }}{% endcapture %}
+      {% unless year == this_year %}
+        {% assign year = this_year %}
+        <p>{{ year }}</p>
+      {% endunless %}
+      <article>
+        <h3><a href="{{ site.url }}{{ page.url }}" class="animsition-link">{{ page.title }}</a></h3>
+        <time>
+          <span class="month">{{ page.date | date: "%b" }}</span>
+          <span class="day">{{ page.date | date: "%d" }}</span>
+          <span class="year">{{ page.date | date: "%Y" }}</span>
+        </time>
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>There are no posts in this category.</p>
+{% endif %}
+</div>

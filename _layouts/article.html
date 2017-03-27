@@ -1,0 +1,22 @@
+---
+layout: default-white
+---
+
+<article class="blog" itemscope itemtype="http://schema.org/Article">
+	<div class="content">
+		<img src="{{ site.url }}/images/{{ page.image }}" class="featured-image no-shadow" />
+		<div class="blog--inner">
+			<div class="blog--meta">
+				<a href="#" class="category">category</a><br />
+				<a class="date">{% if page.date %}<time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>{% endif %}</a>
+			</div>
+			<div class="blog--main">
+				<h2 class="post-title" itemprop="name"><a href="{{ site.url }}{{ post.url }}">{{ page.title }}</a></h2>
+				<p class="post--content">{{ content }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<img class="logo-circle no-shadow" style="display: none;" src="{{ site.url }}/images/logo-circle.png" />
+</div>
+</article><!-- ./wrap -->

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+	<div class="wrap">
+		<div class="archive-wrap">
+			<div class="page-content">
+				<div class="inner block">
+					<h2>Project Portfolio & Creations</h2>
+					<p>Every company we work with has a story to tell, whether they’re based in Corpus Christi, Texas, in the U.S., or abroad. We’ve worked in a variety of industries on countless projects like website design, print design, social media and content marketing, app development and reputation management. We’ve helped each client identify and relate their story to a customer base that increases their bottom line and grows their business. What we do is about more than simply building a website. Explore below to find out more.</p>
+				</div>
+				<div class="portfolio-grid inner">
+				{% for work in site.portfolio %}
+				      {% include portfolio-grid.html %}
+				{% endfor %}
+				</div>
+			</div><!-- /.page-content -->
+		</div><!-- /.archive-wrap -->
+	</div><!-- /.wrap -->
+</div><!-- /#main -->
+<div class="feature-box">
+	<h4>Ready to learn more?</h4>
+	<p>Get a quote for the perfect package with our Project Planner.</p>
+	<a class="button white" href="/project-planner">Project Planner</a>
+</div>

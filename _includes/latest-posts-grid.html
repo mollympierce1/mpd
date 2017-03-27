@@ -1,0 +1,9 @@
+<div class="archive-wrap">
+  <ul class="th-grid">
+      {% for post in site.posts limit:3 %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image }}" alt="">
+      <h5>{{ post.title }}</h5>
+    </a></li>
+      {% endfor %}
+  </ul>
+</div><!-- /.archive-wrap -->

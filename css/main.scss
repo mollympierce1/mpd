@@ -1,0 +1,44 @@
+---
+sitemap: false
+---
+
+/*
+ *
+ *  Skinny Bones Jekyll Starter
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
+
+@import "variables";
+
+/*
+   Vendor
+   ========================================================================== */
+
+@import "vendor/font-awesome/font-awesome";
+
+/*
+   Global
+   ========================================================================== */
+
+@import "mixins";
+@import "reset";
+
+
+/*
+   Components
+   ========================================================================== */
+
+
+@import "palette";
+@import "animsition";
+
+
+/*
+   Page specific
+   ========================================================================== */
+
+@import "modular-scale";
+@import "layout";
