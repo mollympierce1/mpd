@@ -1,10 +1,10 @@
 {
-  "name": "skinny-bones-jekyll",
+  "name": "hrmg",
   "version": "1.0.0",
   "private": true,
-  "description": "A Jekyll starter site",
-  "author": "Michael Rose <michael@mademistakes.com>",
-  "homepage": "http://mademistakes.com/",
+  "description": "Hi-Res Media Group",
+  "author": "Molly Pierce mpierce@hrmg.agency",
+  "homepage": "http://hrmg.agency/",
   "license": "UNLICENSED",
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -23,7 +23,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "headroom.js": "^0.9.3",
-    "markdown-it": "^8.3.1"
   }
 }
