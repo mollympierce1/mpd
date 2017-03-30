@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "AMST - Dorothy Hood"
 collection: portfolio
-featured-image: http://localhost:4000/images/amst-kids-16.jpg
+featured-image: {{ site.url }}/images/amst-kids-16.jpg
 excerpt: "Children's Activity Book"
 client: Art Museum of South Texas
 categories:

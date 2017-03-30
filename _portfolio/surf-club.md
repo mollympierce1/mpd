@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Executive Surf Club"
 collection: portfolio
-featured-image: http://localhost:4000/images/surf-club.jpg
+featured-image: {{ site.url }}/images/surf-club.jpg
 excerpt: "In-Store Display + Graphic Design"
 ---
 

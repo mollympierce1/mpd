@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "WKMC Architects, Inc."
 collection: portfolio
-featured-image: http://localhost:4000/images/wkmc-5.jpg
+featured-image: {{ site.url }}/images/wkmc-5.jpg
 excerpt: "Architectural Business Website + Photography"
 ---
 

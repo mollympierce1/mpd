@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Bay Ltd."
 collection: portfolio
-featured-image: http://localhost:4000/images/bay-ltd-1.jpg
+featured-image: {{ site.url }}/images/bay-ltd-1.jpg
 excerpt: "Industrial Business Website"
 ---
 

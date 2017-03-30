@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Gill Landscape Nursery"
 collection: portfolio
-featured-image: http://localhost:4000/images/gill-landscape-nursery-2.png
+featured-image: {{ site.url }}/images/gill-landscape-nursery-2.png
 excerpt: "Local Business Digital Marketing"
 ---
 

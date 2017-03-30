@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "The Tanning Bar"
 collection: portfolio
-featured-image: http://localhost:4000/images/tanning-bar-1.jpg
+featured-image: {{ site.url }}/images/tanning-bar-1.jpg
 excerpt: "Small Business Website + Photography"
 client: Art Museum of South Texas
 categories:

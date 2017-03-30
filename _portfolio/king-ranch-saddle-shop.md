@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "King Ranch Saddle Shop"
 collection: portfolio
-featured-image: http://localhost:4000/images/king-ranch-1.jpg
+featured-image: {{ site.url }}/images/king-ranch-1.jpg
 excerpt: "E-commerce Website"
 ---
 
