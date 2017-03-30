@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Ironwood Finance"
 collection: portfolio
-featured-image: {{ site.url }}/images/ironwood-finance-1.jpg
+featured-image: images/ironwood-finance-1.jpg
 excerpt: "Lead Generation Website"
 ---
 Ironwood Finance is a private B2B lender that takes a modern approach to loans and capital financing. Kevin, the organization’s owner, came to Hi-Res Media Group in search of a better web presence that would help function as the foundation of a new area in his digital marketing efforts. Ironwood was also in need of lead generation via Salesforce and Pardot integration. A great web presence and digital marketing campaign start with a solid website and a fresh design, proper coding and custom content carefully drafted to pursue proper search engine keywords.

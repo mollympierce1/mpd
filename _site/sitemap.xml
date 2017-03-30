@@ -1,145 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>{{ site.url }}/portfolio/amst-dorothy-hood-kids/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/amst-dorothy-hood-kids/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/amst-quarterly/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/amst-quarterly/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/bay-ltd/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/bay-ltd/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/city-of-kingsville/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/city-of-kingsville/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/concrete-street-amphitheater/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/concrete-street-amphitheater/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/gill-landscape-nursery/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/gill-landscape-nursery/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/harbor-playhouse/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/harbor-playhouse/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/industrial-fabricators/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/industrial-fabricators/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/ironwood-finance/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/ironwood-finance/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/islander-alumni-association/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/islander-alumni-association/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/king-ranch-saddle-shop/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/king-ranch-saddle-shop/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/rockits-whiskey-bar/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/rockits-whiskey-bar/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/surf-club/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/surf-club/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/the-tanning-bar/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/the-tanning-bar/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/waterstreet-restaurant/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/waterstreet-restaurant/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/portfolio/wkmc-architects/</loc>
-<lastmod>2017-03-30T12:54:36-05:00</lastmod>
+<loc>http://localhost:4000/portfolio/wkmc-architects/</loc>
+<lastmod>2017-03-30T13:08:46-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/the-key-to-content-creation/</loc>
+<loc>http://localhost:4000/the-key-to-content-creation/</loc>
 <lastmod>2016-07-04T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/new-years-eve-is-awesome-2/</loc>
+<loc>http://localhost:4000/new-years-eve-is-awesome-2/</loc>
 <lastmod>2017-03-18T17:16:01-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/new-years-eve-is-awesome-3/</loc>
+<loc>http://localhost:4000/new-years-eve-is-awesome-3/</loc>
 <lastmod>2017-03-18T17:16:01-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/new-years-eve-is-awesome/</loc>
+<loc>http://localhost:4000/new-years-eve-is-awesome/</loc>
 <lastmod>2017-03-18T17:16:01-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/about-us</loc>
+<loc>http://localhost:4000/about-us</loc>
 </url>
 <url>
-<loc>{{ site.url }}/blog</loc>
+<loc>http://localhost:4000/blog</loc>
 </url>
 <url>
-<loc>{{ site.url }}/career-opportunities/</loc>
+<loc>http://localhost:4000/career-opportunities/</loc>
 </url>
 <url>
-<loc>{{ site.url }}/contact/</loc>
+<loc>http://localhost:4000/contact/</loc>
 </url>
 <url>
-<loc>{{ site.url }}/graphic-design/</loc>
+<loc>http://localhost:4000/graphic-design/</loc>
 </url>
 <url>
-<loc>{{ site.url }}/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>{{ site.url }}/our-work</loc>
+<loc>http://localhost:4000/our-work</loc>
 </url>
 <url>
-<loc>{{ site.url }}/project-planner/</loc>
+<loc>http://localhost:4000/project-planner/</loc>
 </url>
 <url>
-<loc>{{ site.url }}/services</loc>
+<loc>http://localhost:4000/services</loc>
 </url>
 <url>
-<loc>{{ site.url }}/terms/</loc>
+<loc>http://localhost:4000/terms/</loc>
 </url>
 <url>
-<loc>{{ site.url }}/faqs.html</loc>
+<loc>http://localhost:4000/faqs.html</loc>
 <lastmod>2017-03-26T17:11:43-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/images/artrageous-savethedate-back.pdf</loc>
+<loc>http://localhost:4000/images/artrageous-savethedate-back.pdf</loc>
 <lastmod>2017-03-29T17:15:33-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/images/artrageous-savethedate-front.pdf</loc>
+<loc>http://localhost:4000/images/artrageous-savethedate-front.pdf</loc>
 <lastmod>2017-03-29T17:15:31-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/images/gill-logo.pdf</loc>
+<loc>http://localhost:4000/images/gill-logo.pdf</loc>
 <lastmod>2017-02-14T19:40:14-06:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/images/gill-march-postcard.pdf</loc>
+<loc>http://localhost:4000/images/gill-march-postcard.pdf</loc>
 <lastmod>2017-03-17T13:52:00-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/images/gill-march-postcard_1.pdf</loc>
+<loc>http://localhost:4000/images/gill-march-postcard_1.pdf</loc>
 <lastmod>2017-03-17T13:52:00-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/images/s-series-41.pdf</loc>
+<loc>http://localhost:4000/images/s-series-41.pdf</loc>
 <lastmod>2017-03-16T15:02:38-05:00</lastmod>
 </url>
 <url>
-<loc>{{ site.url }}/post-grid.html</loc>
+<loc>http://localhost:4000/post-grid.html</loc>
 <lastmod>2017-02-13T18:45:13-06:00</lastmod>
 </url>
 </urlset>

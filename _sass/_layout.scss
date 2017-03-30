@@ -174,20 +174,6 @@ COMPONENTS
   margin-left: 5px;
 }
 
-
-.gradient {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  color: #3a3a38;
-  background-image: url({{ site.url }}/images/gradient-1.png);
-  padding: 20px;
-  mix-blend-mode: screen;
-  background-size: cover;
-  left: 0px;
-  right: 60%;
-}
-
 .staff {
   display: flex;
   flex-wrap: wrap;

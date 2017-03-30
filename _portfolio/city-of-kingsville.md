@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "City of Kingsville"
 collection: portfolio
-featured-image: {{ site.url }}/images/city-of-kingsville.jpg
+featured-image: images/city-of-kingsville.jpg
 excerpt: "Reference + Tourism Website"
 ---
 

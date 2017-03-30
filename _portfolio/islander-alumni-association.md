@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Islander Alumni Association"
 collection: portfolio
-featured-image: {{ site.url }}/images/islander-alumni-2.jpg
+featured-image: images/islander-alumni-2.jpg
 excerpt: "Community Organization Website"
 ---
 

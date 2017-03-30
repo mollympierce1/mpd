@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Rockit's Whiskey Bar & Saloon"
 collection: portfolio
-featured-image: {{ site.url }}/images/rockits-1.jpg
+featured-image: images/rockits-1.jpg
 excerpt: "Music Venue + Small Business Website"
 ---
 
