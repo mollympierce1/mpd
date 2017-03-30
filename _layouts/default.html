@@ -15,7 +15,12 @@
   </div>
   {% include animsition.html %}
   <script>
-      AOS.init();
+      AOS.init({
+        offset: 200,
+        duration: 1200,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
     </script>
   </body>
 </html>
