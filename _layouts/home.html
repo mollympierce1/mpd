@@ -103,7 +103,12 @@
 })();
 </script>
 <script>
-    AOS.init();
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
   </script>
   </body>
 </html>
