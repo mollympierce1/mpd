@@ -35,6 +35,8 @@
   <script>
   document.documentElement.className = 'js';
   </script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,10 +94,10 @@
   <img src="images/wkmc-1.jpg">
 </div>
 <div class="inner centered block">
-  <h2>Build more than a website.</h2>
-  <p>Go beyond a simple turn-key website and make your business stand out with exceptional photography, branding, design and interactivity. Our services come a la carte or as a package carefully designed to meet the goals strategically planned out for your organization’s long term growth.</p>
+  <h2 data-aos="zoom-in">Build more than a website.</h2>
+  <p data-aos="zoom-in">Go beyond a simple turn-key website and make your business stand out with exceptional photography, branding, design and interactivity. Our services come a la carte or as a package carefully designed to meet the goals strategically planned out for your organization’s long term growth.</p>
 </div>
-  <div class="services inner block">
+  <div class="services inner block" data-aos="zoom-in">
     <div class="services-item">
       <h4>Strategy</h4>
       <p>We take a comprehensive look at our clients' business goals and develop marketing strategies that will ignite a growing audience.</p>
@@ -138,16 +140,16 @@
     </div>
   </div>
   <div style="text-align: center;" class="block">
-    <a class="button animsition-link" href="/our-work">View Our Work</a>
+    <a class="button animsition-link" href="/our-work" data-aos="zoom-in">View Our Work</a>
   </div>
-  <div class="testimonial border">
+  <div class="testimonial border" data-aos="zoom-in">
     <p>“Boosted overall operations and efficiency.”</p>
     <h6>Liza, The City of Corpus Christi Learning Institute</h6>
   </div>
   <div class="feature-box">
-    <h4>Ready to learn more?</h4>
-    <p>Get a quote for the perfect package with our Project Planner.</p>
-    <a class="button white" href="/project-planner">Project Planner</a>
+    <h4 data-aos="zoom-in">Ready to learn more?</h4>
+    <p data-aos="zoom-in">Get a quote for the perfect package with our Project Planner.</p>
+    <a class="button white" href="/project-planner" data-aos="zoom-in">Project Planner</a>
   </div>
 
     </div>
@@ -209,5 +211,8 @@ transition: function(url){ window.location.href = url; }
 });
 </script>
 
+  <script>
+      AOS.init();
+    </script>
   </body>
 </html>

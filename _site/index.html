@@ -36,6 +36,8 @@
   <script>
   document.documentElement.className = 'js';
   </script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,10 +95,10 @@
         </div>
         <div class="flex inner top-block">
           <div class="two-thirds" data-scroll>
-            <h2>Delivering Real Online Marketing Results</h2>
-            <p>The old adage “build it and they will come” no longer works. In today’s digital era, a website is incomplete without a marketing plan to attract visitors. A cleverly crafted digital marketing strategy can lead to big changes in your business. Access a new market, streamline operations, eliminate waste, or collect customer insights – whatever your goal, your online presence can help achieve it. We partner with businesses to obtain the greatest possible return on each marketing investment with strategic targeting, careful planning, and strong design.</p>
+            <h2 data-aos="zoom-in">Delivering Real Online Marketing Results</h2>
+            <p data-aos="zoom-in">The old adage “build it and they will come” no longer works. In today’s digital era, a website is incomplete without a marketing plan to attract visitors. A cleverly crafted digital marketing strategy can lead to big changes in your business. Access a new market, streamline operations, eliminate waste, or collect customer insights – whatever your goal, your online presence can help achieve it. We partner with businesses to obtain the greatest possible return on each marketing investment with strategic targeting, careful planning, and strong design.</p>
           </div>
-          <div class="one-third" id="home-capabilities" data-scroll>
+          <div class="one-third" id="home-capabilities" data-scroll data-aos="zoom-in">
               <h5>Strategy</h5>
               <p>Branding, Analytics, Messaging, Content Strategy</p>
               <h5>Design</h5>
@@ -108,9 +110,9 @@
           </div>
         </div>
         <div class="inner centered block" data-scroll>
-          <a href="/about-us" class="button animsition-link">About HRMG</a><a href="/services" class="button animsition-link" />Our Services</a>
+          <a href="/about-us" class="button animsition-link" data-aos="zoom-in">About HRMG</a><a href="/services" class="button animsition-link" data-aos="zoom-in" />Our Services</a>
         </div>
-        <div class="inner block" data-scroll>
+        <div class="inner block" data-scroll data-aos="zoom-in">
           <div class="archive-wrap">
   <ul class="th-grid">
       
@@ -131,12 +133,12 @@
 
         </div>
         <div class="feature-box">
-          <h4>Ready to learn more?</h4>
-          <p>Get a quote for the perfect package with our Project Planner.</p>
-          <a class="button white" href="/project-planner">Project Planner</a>
+          <h4 data-aos="zoom-in">Ready to learn more?</h4>
+          <p data-aos="zoom-in">Get a quote for the perfect package with our Project Planner.</p>
+          <a class="button white" href="/project-planner" data-aos="zoom-in">Project Planner</a>
         </div>
       </div>
-      <div class="block" data-scroll>
+      <div class="block" data-scroll data-aos="zoom-in">
       <footer role="contentinfo" id="site-footer" class="footer-container">
 	<ul class="footer-top">
 		<li><h4>Contact Us</h5>
@@ -221,5 +223,8 @@
     });
 })();
 </script>
+<script>
+    AOS.init();
+  </script>
   </body>
 </html>
