@@ -31,6 +31,7 @@
   <script src="http://localhost:4000/js/main.js"></script>
   <script src="http://localhost:4000/js/plugins/aos.js"></script>
   <script src="http://localhost:4000/js/plugins/instafeed.min.js"></script>
+  <script src="http://localhost:4000/js/plugins/slick.js"></script>
   <script src="https://use.typekit.net/rvj5kzx.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script>
@@ -91,7 +92,15 @@
     </div>
   </div>
     <div class="mid">
-      <img src="images/hrmg-2.png">
+      <div class="slider single-item">
+					<div><img src="images/hrmg-2.png"></div>
+          <div><img src="images/hrmg-2.png"></div>
+          <div><img src="images/hrmg-2.png"></div>
+          <div><img src="images/hrmg-2.png"></div>
+				</div>
+				<script>
+$('.single-item').slick();
+				</script>
     </div>
     <div class="block inner centered">
         <h2>Our Design Meets Your Story</h2>
