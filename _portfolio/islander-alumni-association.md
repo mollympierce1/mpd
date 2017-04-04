@@ -10,7 +10,7 @@ When production began on a brand new website for the Texas A&M University-Corpus
 
 The end result is an easy to use website with streamlined navigation that showcases a number of features including one hundred percent original content with a strong call to action, a feature-rich user system that allows alumni to register via social media profiles such as through Facebook, Twitter or Google+, a searchable member directory to connect with old friends and make new ones, Chapter pages complete with forums, a maintenance-free calendar and photo gallery with an automatic feed of events from the organization’s Facebook page, custom user permissions, custom responsive design with technical support for both smartphones and tablets, a MailChimp integration and form builder with conditional logic and a custom maintenance page with a countdown timer anticipating the live launch of site.
 
-#### [Visit](http://www.islanderalumni.org/)
+#### [VISIT](http://www.islanderalumni.org/)
 
 ![Islander Alumni Association]({{ site.url }}/images/islander-alumni-1.jpg)
 {: .portfolio-center}
