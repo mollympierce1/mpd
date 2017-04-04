@@ -12,7 +12,7 @@ When Hi-Res Creative was approached by the City of Kingsville to improve their e
 
 As one of our largest and most iconic projects, the new City of Kingsville website resulted in a highly optimized, responsive website that is easy to use and fulfills every single one of the city’s requests. The beautiful new website now boasts brand new high quality images in collaboration with John Garza from EyeCon360, a brand new city logo and 1.07 second load times on all desktop, tablet and mobile devices. The site also includes new features such as a customized calendar system with subscription support for iCalendar & Google Calendar, an integrated GIS Server system, a full file storage system with a centralized directory for easy media categorization and a city-wide alert system for risk management during natural or chemical disasters. Our team also implemented an integrated GovQA ticketing system to improve the city’s handling of citizen requests in a timely and straightforward manner.
 
-![King Ranch Saddle Shop]({{ site.url }}/images/city-of-kingsville-2.jpg)
+![City of Kingsville]({{ site.url }}/images/city-of-kingsville-2.jpg)
 {: .portfolio-center}
-![King Ranch Saddle Shop]({{ site.url }}/images/city-of-kingsville-3.jpg)
+![City of Kingsville]({{ site.url }}/images/city-of-kingsville-3.jpg)
 {: .portfolio-center}
