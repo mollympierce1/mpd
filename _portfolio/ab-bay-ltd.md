@@ -16,6 +16,8 @@ As one of our largest projects to date in a brand new industry, the team at HRMG
 
 Though Bay Ltd. is one of the largest industrial full-service industrial construction and fabrication providers in the nation and is continually recognized for its safety performance, its online presence was minimal. The previous website was in need of complete upgrades and overhauls involving content, design, functionality and security. Our approach was to create a site that not only raised awareness regarding Bay Ltd. and its wide-range of comprehensive services, but also to help create a distinctive brand identity, improve user experience, enhance security and attract new visitors while retaining existing ones.
 
+#### [Visit](https://www.bayltd.com)
+
 ![Bay Ltd.]({{ site.url }}/images/bay-ltd-4.jpg)
 {: .portfolio-center}
 ![Bay Ltd.]({{ site.url }}/images/bay-ltd-7.jpg)
