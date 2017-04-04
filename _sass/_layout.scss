@@ -174,7 +174,7 @@ COMPONENTS
 }
 
 .top-image-credit p {
-  font-family: "orator std";
+  font-family: "orator-std";
   position: relative;
   margin-top: 0px;
   color: $gray-md;
@@ -218,7 +218,7 @@ COMPONENTS
 
 .staff-item p {
   margin-top: 0px;
-  font-family: 'orator std';
+  font-family: 'orator-std';
   text-transform: uppercase;
   font-size: 0.7em;
   margin-top: 5px;
@@ -307,7 +307,7 @@ text-align: center;
 }
 
 .block-header {
-  font-family: 'orator std';
+  font-family: 'orator-std';
   text-transform: uppercase;
   padding-top: 3em;
   text-align: center;
@@ -384,7 +384,7 @@ text-align: center;
   font-size: 0.8em;
 
   li {
-    font-family: 'orator std';
+    font-family: 'orator-std';
     letter-spacing: 0px;
   }
 }
@@ -521,9 +521,9 @@ p {
         margin-top: 20px;
     }
 
-    h5 {color: #fff;font-family: 'orator std';letter-spacing: 0px;text-transform: uppercase;}
+    h5 {color: #fff;font-family: 'orator-std';letter-spacing: 0px;text-transform: uppercase;}
 
-    p { margin-top: 30px; font-size: 0.9em; color: #fff;font-family: 'orator std';letter-spacing: 0px;text-transform: uppercase;}
+    p { margin-top: 30px; font-size: 0.9em; color: #fff;font-family: 'orator-std';letter-spacing: 0px;text-transform: uppercase;}
 
 
     a {
@@ -541,7 +541,7 @@ p {
   padding: 1em;
 
   h1 {
-    font-family: 'orator std';
+    font-family: 'orator-std';
     color: #fff;
 }
 }
@@ -618,7 +618,7 @@ color: $gray-dk;
 
 h6 {
 font-size: 1.125em;
-font-family: 'orator std';
+font-family: 'orator-std';
 color: $gray-dk;
 margin: 0.5em 0px 0.75em;
 }
@@ -688,7 +688,7 @@ nav li a {
 padding: 0px 10px;
 float: right;
 color: $gray-dk;
-font-family: 'orator std';
+font-family: 'orator-std';
 font-size: 80%;
 text-transform: uppercase;
 letter-spacing: 0.25px;
@@ -855,7 +855,7 @@ font-size: 0.75em;
 text-align: right;
 
 span {
-font-family: 'orator std';
+font-family: 'orator-std';
 }
 }
 }
@@ -1247,7 +1247,7 @@ opacity: 1;
 transition: opacity 6s, transform 6s, color 1s;
 -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-font-family: 'orator std';
+font-family: 'orator-std';
 text-transform: uppercase;
 font-size: 1.25em;
 color: $orange-lt;
@@ -1352,12 +1352,12 @@ article.blog--list {
 }
 
 .category {
-    font-family: 'orator std';
+    font-family: 'orator-std';
     font-size: 0.8em;
 }
 
 a.date {
-    font-family: 'orator std';
+    font-family: 'orator-std';
     font-size: 0.6em;
     letter-spacing: 0px;
     color: gray;
@@ -1383,7 +1383,7 @@ p.post-excerpt {
 }
 
 a.post-more {
-  font-family: 'orator std';
+  font-family: 'orator-std';
   font-size: 0.75em;
   text-transform: uppercase;
   color: $orange-lt;
