@@ -1406,3 +1406,22 @@ a.post-more:hover {
     flex-wrap: wrap;
 }
 }
+
+
+
+
+
+
+
+
+
+
+.bottom {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: right;
+  background: $orange;
+}
+.blink_me{pointer-events:none;font-size:18px;-webkit-animation:blinker 3s linear infinite;animation:blinker 3s linear infinite}.header .available .blink_me a{color:#444}@-webkit-keyframes blinker{50%{opacity:0.0}}@keyframes blinker{50%{opacity:0.0}}
