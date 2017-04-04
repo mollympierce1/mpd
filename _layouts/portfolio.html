@@ -18,8 +18,8 @@ layout: default-white
 			</div><!-- /.content -->
 		</div><!-- /.inner -->
 		<div class="PageNavigation">
-			<a class="prev animsition-link" href="{{page.previous.url}}">{% if page.previous.url %}Previous: {{page.previous.title}}{% endif %}</a>
-		 <a class="next animsition-link" href="{{page.next.url}}">{% if page.next.url %}Next: {{page.next.title}}{% endif %}</a>
+			<a class="prev animsition-link" href="{{ site.url }}/{{page.previous.url}}">{% if page.previous.url %}Previous: {{page.previous.title}}{% endif %}</a>
+		 <a class="next animsition-link" href="{{ site.url }}/{{page.next.url}}">{% if page.next.url %}Next: {{page.next.title}}{% endif %}</a>
 		</div>
 		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
 	</article><!-- ./wrap -->
