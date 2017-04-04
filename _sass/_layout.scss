@@ -1417,11 +1417,22 @@ a.post-more:hover {
 
 
 .bottom {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  text-align: right;
-  background: $orange;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    background: #ff8500;
+    padding: 12px 1%;
+    font-family: 'kano';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8em;
+    z-index: 300;
 }
-.blink_me{pointer-events:none;font-size:18px;-webkit-animation:blinker 3s linear infinite;animation:blinker 3s linear infinite}.header .available .blink_me a{color:#444}@-webkit-keyframes blinker{50%{opacity:0.0}}@keyframes blinker{50%{opacity:0.0}}
+.blink_me{pointer-events:none;-webkit-animation:blinker 3s linear infinite;animation:blinker 3s linear infinite}.header .available .blink_me a{color:#444}@-webkit-keyframes blinker{50%{opacity:0.0}}@keyframes blinker{50%{opacity:0.0}}
+
+
+.available a {
+    color: #fff;
+}
