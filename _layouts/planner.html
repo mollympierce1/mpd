@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body id="js-body" class="planner">
+    {% include browser-upgrade.html %}
+    <div id="page" class="animsition default">
+      {% include header.html %}
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+  {% include bottom-bar.html %}
+  {% include animsition.html %}
+  </body>
+</html>

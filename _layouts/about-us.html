@@ -1,7 +1,94 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
+{% include head.html %}
+
+<body id="js-body" class="about">
+    {% include browser-upgrade.html %}
+    <div id="page" class="animsition">
+      {% include header.html %}
+      <div class="container hero">
+        <div class="title">
+          <h1>About Me</h1>
+        </div>
+      </div>
+      <div class="container flex">
+        <div class="two-thirds">
+          <p>I'm a graphic designer who works with businesses in Corpus Christi, TX to improve their visual communication and digital outreach. I work with my clients on branding, promotional, and in-house materials, digital marketing campaigns, and website design.</p>
+          <p>I am also a proud member of the collaborative marketing cooperative, <a href="http://hrmg.agency">Hi-Res Media Group</a>, alongside expert creatives in a variety of associated areas. This partnership grants me the opportunity to provide my clients with services such as photography, videography, advertising campaign management, content marketing, and software and app design.</p>
+          <div class="clients top-block">
+          <p>I've partnered with some of Corpus Christi's finest businesses, including:</p>
+          <p>&nbsp;</p>
+          <div class="flex">
+            <div class="one-third">
+              <ul>
+                <li>Water Street Oyster Bar</li>
+                <li>Gill Landscape Nursery</li>
+                <li>WKMC Architects</li>
+                <li>Harbor Playhouse</li>
+              </ul>
+            </div>
+            <div class="one-third">
+              <ul>
+                <li>Executive Surf Club</li>
+                <li>Art Museum of South Texas</li>
+                <li>Concrete Street Amphitheater</li>
+                <li>Sterling Personnel</li>
+              </ul>
+            </div>
+            <div class="one-third">
+              <ul>
+                <li>Ironwood Finance</li>
+                <li>Industrial Fabricators Corpus Christi</li>
+                <li>Corpus Christi Symphony Orchestra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="one-third">
+          <div id="headshot" >
+            <p><a href="mailto:mpierce@hirescreative.com">
+              <img src="{{ site.url }}/images/molly-pierce.jpg" />
+            </a></p>
+          </div>
+            <div id="headshot-details">
+              <h6>Molly Pierce</h6>
+              <div class="flex">
+                <div>
+                  <p>Phone:<br />
+                  <a href="tel:3619462240">(361) 946-2240</a></p>
+                </div>
+                <div>
+                  <p>Email:<br />
+                  <a href="mpierce@hirescreative.com">mpierce@hirescreative.com</a></p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container block">
+        <div class="grid-bg">
+          <h5 id="grid-bg-title">Recent Projects</h5>
+          <div class="th-grid">
+            {% include latest-portfolio-grid.html %}
+          </div>
+          <div id="right-button">
+            <a class="button" href="{{ site.url }}/work">View My Work</a><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  {% include footer.html %}
+  {% include bottom-bar.html %}
+  {% include animsition.html %}
+  </body>
+</html>
+
+
+
+
+<!--
   <div class="intro">
     <div class="inner centered">
       <h2>Delivering Real Online Marketing Results</h1>
@@ -86,7 +173,7 @@ layout: default
         <li><img src="images/client-12.jpg" /></li>
       </ul>
       <div class="inner centered block">
-        <p><a href="{{ site.url }}/our-work" class="button animsition-link">View Our Work</a></p>
+        <p><a href="{{ site.url }}/work" class="button animsition-link">View Our Work</a></p>
       </div>
     </div>
   </div>
@@ -112,3 +199,4 @@ layout: default
     });
     userFeed.run();
 </script>
+--!>

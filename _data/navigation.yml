@@ -1,22 +1,12 @@
 # Site navigation links
 
-- title: About
-  url: /about-us
-  excerpt:
-  image:
-
-- title: Services
-  url: /services
+- title: About Me
+  url: /about-me
   excerpt:
   image:
 
 - title: Work
-  url: /our-work
-  excerpt:
-  image:
-
-- title: Blog
-  url: /blog
+  url: /work
   excerpt:
   image:
 

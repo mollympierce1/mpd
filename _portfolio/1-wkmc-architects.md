@@ -3,7 +3,7 @@ layout: portfolio
 title:  "WKMC Architects, Inc."
 collection: portfolio
 featured-image: images/wkmc-5.jpg
-excerpt: "Architectural Business Website + Photography"
+excerpt: "Architectural Business Website Design"
 ---
 
 WKMC Architects, established 1953, is a well-known architectural firm in Corpus Christi, Texas. When we began the development of the website design and development project, we set out to achieve a presence that was not only modern but also developed with the contribution of the company being represented.

@@ -2,8 +2,8 @@
 layout: portfolio
 title:  "Executive Surf Club"
 collection: portfolio
-featured-image: images/surf-club.jpg
-excerpt: "In-Store Display + Graphic Design"
+featured-image: images/surf-club.png
+excerpt: "In-Store Display, Menu Graphic Design"
 ---
 
 ![Executive Surf Club]({{ site.url }}/images/surf-club-2.png)

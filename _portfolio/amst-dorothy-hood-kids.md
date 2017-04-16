@@ -3,7 +3,7 @@ layout: portfolio
 title:  "AMST - Dorothy Hood"
 collection: portfolio
 featured-image: images/amst-kids-16.jpg
-excerpt: "Children's Activity Book"
+excerpt: "Children's Activity Book, Editorial Graphic Design"
 client: Art Museum of South Texas
 categories:
   - graphic design

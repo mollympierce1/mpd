@@ -1,22 +1,31 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div id="main" role="main">
-	<div class="wrap">
-		<div class="archive-wrap">
-			<div class="page-content">
-				<div class="inner block">
-					<h2>Project Portfolio & Creations</h2>
-					<p>Every company we work with has a story to tell, whether they’re based in Corpus Christi, Texas, in the U.S., or abroad. We’ve worked in a variety of industries on countless projects like website design, print design, social media and content marketing, app development and reputation management. We’ve helped each client identify and relate their story to a customer base that increases their bottom line and grows their business. What we do is about more than simply building a website. Explore below to find out more.</p>
-				</div>
-				<div class="portfolio-grid inner">
-				{% for work in site.portfolio %}
-				      {% include portfolio-grid.html %}
-				{% endfor %}
-				</div>
-			</div><!-- /.page-content -->
-		</div><!-- /.archive-wrap -->
-	</div><!-- /.wrap -->
-</div><!-- /#main -->
-{% include feature-box.html %}
+{% include head.html %}
+
+<body id="js-body" class="work">
+    {% include browser-upgrade.html %}
+    <div id="page" class="animsition">
+      {% include header.html %}
+			<div class="container hero">
+        <div class="title">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+			<div class="container wrap">
+				<div class="archive-wrap">
+					<div class="page-content">
+						<div class="portfolio-grid">
+						{% for work in site.portfolio %}
+						      {% include portfolio-grid.html %}
+						{% endfor %}
+						</div>
+					</div><!-- /.page-content -->
+				</div><!-- /.archive-wrap -->
+			</div><!-- /.wrap -->
+		</div>
+		{% include footer.html %}
+		{% include bottom-bar.html %}
+		{% include animsition.html %}
+		</body>
+	</html>

@@ -1,9 +1,7 @@
-<div class="archive-wrap">
   <ul class="th-grid">
       {% for work in site.portfolio limit:3 %}
-    <li><a href="{{ site.url }}{{ work.url }}" title="{{ work.title }}" class="animsition-link"><img src="{{ work.featured-image }}" alt="">
-      <h5>{{ work.title }}</h5>
-    </a></li>
+    <li><a href="{{ site.url }}{{ work.url }}" title="{{ work.title }}" class="animsition-link"><img src="{{ work.featured-image }}" alt="">    </a><br />
+      <p class="work-title"><a href="{{ site.url }}{{ work.url }}" title="{{ work.title }}" class="animsition-link">{{ work.title }}</a></p>
+    </li>
       {% endfor %}
   </ul>
-</div><!-- /.archive-wrap -->
