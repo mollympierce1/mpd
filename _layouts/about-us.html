@@ -78,6 +78,19 @@
           </div>
         </div>
       </div>
+      <div class="container block">
+        <div class="inner block" id="instafeed"></div>
+      </div>
+      <script type="text/javascript">
+          var userFeed = new Instafeed({
+              get: 'user',
+              clientId: '5f5b3dd757334daebc68e1a699e3b759',
+              accessToken: '294607bec6d74ded959f2a85956374e8',
+              limit: '5',
+              resolution: 'low_resolution'
+          });
+          userFeed.run();
+      </script>
     </div>
   {% include footer.html %}
   {% include bottom-bar.html %}
