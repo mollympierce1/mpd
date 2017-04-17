@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "WKMC Architects, Inc."
 collection: portfolio
-featured-image: images/wkmc-5.jpg
+featured-image: images/wkmc-2.jpg
 excerpt: "Architectural Business Website Design"
 ---
 
@@ -14,8 +14,9 @@ On our own, we converted the wireframe design into a functional web presence int
 
 What resulted was a modern web presence that achieves three components each website project sets out to accomplish; know, like and trust.
 
-#### [VISIT](https://www.wkmcarchitects.com)
+[VISIT](https://www.wkmcarchitects.com)
 
+A Hi-Res Media Group project. Photography and words above by [Jonathan Swindle.](https://hrmg.agency)
 
 ![WKMC Architects, Inc.]({{ site.url }}/images/wkmc-6.jpg)
 {: .portfolio-center}

@@ -11,7 +11,9 @@ Over the course of 3 months, Molly worked hands-on with the Ironwood team to bui
 
 Ironwood Finance operates within American Bank Tower on the Bayfront in Corpus Christi, Texas.
 
-#### [VISIT](https://www.ironwoodfinance.com)
+[VISIT](https://www.ironwoodfinance.com)
+
+A Hi-Res Media Group project. Photography and words above by [Jonathan Swindle.](https://hrmg.agency)
 
 ![Ironwood Finance]({{ site.url }}/images/ironwood-finance-2.jpg)
 {: .portfolio-center}
