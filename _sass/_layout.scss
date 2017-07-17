@@ -6,7 +6,7 @@ STRUCTURE
 ========================================================================== */
 
 body {
-  background: #000;
+  background: #fff;
 }
 
 #page {
@@ -24,11 +24,7 @@ body {
   }
 }
 
-@media only screen and (min-width:1280px) {
-  #page, .page-white, #site-footer {
-    max-width:86.875em
-  }
-}
+
 
 .container {
   width: 100%;
@@ -125,7 +121,7 @@ body {
 
 .grid-bg {
     background-image: url(http://mollypiercedesign.com/images/subtle_dots_@2X.png);
-    background-color: #AD0028;
+    background-color: #fff;
     background-blend-mode: multiply;
     padding: 2em;
     margin-bottom: 6rem;
@@ -135,7 +131,9 @@ body {
     padding-bottom: 0.15em;
     border-bottom: 1px solid #fff;
     margin-bottom: 1.25em;
-    color: #fff;
+    color: #000;
+    font-family: 'mauritius';
+    font-size: 28px;
 }
 
 /* ==========================================================================
@@ -143,6 +141,10 @@ COMPONENTS
 ========================================================================== */
 /*
 ========================================================================== */
+
+
+
+
 
 .tagline {
   max-width: 900px;
@@ -168,7 +170,7 @@ COMPONENTS
 }
 
 .top-image-credit p {
-font-family: 'Eczar', serif;  position: relative;
+font-family: 'mauritius', serif;  position: relative;
   margin-top: 0px;
   color: $gray-md;
   text-shadow: none;
@@ -211,7 +213,7 @@ font-family: 'Eczar', serif;  position: relative;
 
 .staff-item p {
   margin-top: 0px;
-font-family: 'Eczar', serif;  text-transform: uppercase;
+font-family: 'mauritius', serif;  text-transform: uppercase;
   font-size: 0.7em;
   margin-top: 5px;
   letter-spacing: 0px;
@@ -221,8 +223,8 @@ font-family: 'Eczar', serif;  text-transform: uppercase;
   margin-top: 10px;
   line-height: 1.1em;
   margin-bottom: 0px;
-font-family: 'Eczar', serif;  font-size: 1.2em;
-  font-weight: 300;
+font-family: 'mauritius', serif;  font-size: 1.2em;
+  font-weight: 400;
 }
 
 .staff h5 {
@@ -286,7 +288,7 @@ font-family: 'Eczar', serif;  font-size: 1.2em;
 }
 
 .block-header {
-font-family: 'Eczar', serif;  text-transform: uppercase;
+font-family: 'mauritius', serif;  text-transform: uppercase;
   padding-top: 3em;
   text-align: center;
 }
@@ -336,7 +338,7 @@ font-family: 'Eczar', serif;  text-transform: uppercase;
   font-size: 0.8em;
 
   li {
-font-family: 'Eczar', serif;    letter-spacing: 0px;
+font-family: 'mauritius', serif;    letter-spacing: 0px;
   }
 }
 
@@ -366,7 +368,7 @@ font-family: 'Eczar', serif;    letter-spacing: 0px;
 
 
 .services h4 {
-font-family: 'Eczar', serif;  text-transform: uppercase;
+font-family: 'mauritius', serif;  text-transform: uppercase;
   font-size: 1.25em;
 }
 
@@ -402,7 +404,6 @@ font-family: 'Eczar', serif;  text-transform: uppercase;
   }
 
   img {
-   filter: grayscale(100);
    -webkit-transition: mix-blend-mode 0.2s ease-out;
    transition: mix-blend-mode 0.2s ease-out;
   }
@@ -411,7 +412,7 @@ font-family: 'Eczar', serif;  text-transform: uppercase;
 
 
 .th-grid li img:hover {
-    mix-blend-mode: exclusion;
+    mix-blend-mode: multiply;
 }
 
 
@@ -419,7 +420,7 @@ font-family: 'Eczar', serif;  text-transform: uppercase;
 font-size: 0.75rem;
 
 h5 {
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 text-transform: uppercase;
 letter-spacing: 3px;
 }
@@ -465,19 +466,17 @@ p {
   }
 
     h1 {
-        color: #fff;
-font-family: 'Eczar', serif;        font-weight: 600;
+font-family: 'mauritius', serif;        font-weight: 400;
         font-size: 3em;
     }
 
     h3 {
-        color: #fff;
-font-family: 'Eczar', serif;        margin-top: 20px;
+font-family: 'mauritius', serif;        margin-top: 20px;
     }
 
-    h5 {color: #fff;font-family: 'Eczar', serif;letter-spacing: 0px;text-transform: uppercase;}
+    h5 {font-family: 'mauritius', serif;letter-spacing: 0px;text-transform: uppercase;}
 
-    p { margin-top: 30px; font-size: 0.9em; color: #fff;font-family: 'Eczar', serif;letter-spacing: 0px;text-transform: uppercase;}
+    p { margin-top: 30px; font-size: 0.9em;font-family: 'mauritius', serif;letter-spacing: 0px;text-transform: uppercase;}
 
 
     a {
@@ -485,7 +484,7 @@ font-family: 'Eczar', serif;        margin-top: 20px;
     }
 
     a:hover {
-        color: #fff;
+        color: gray;
         text-decoration: underline;
     }
 }
@@ -502,7 +501,7 @@ font-family: 'Eczar', serif;        margin-top: 20px;
     width: 100%;
     text-align: right;
     padding: 12px 1%;
-    font-family: 'Eczar', serif;    text-transform: uppercase;
+    font-family: 'mauritius', serif;    text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 0.8em;
     z-index: 300;
@@ -526,7 +525,7 @@ font-family: 'Eczar', serif;        margin-top: 20px;
     z-index: 100;
     background: white;
     padding: 15px 25px;
-font-family: 'Eczar', serif;    color: #000;
+font-family: 'mauritius', serif;    color: #000;
     font-size: 0.65em;
 }
 
@@ -585,18 +584,18 @@ line-height: 1.45;
 }
 
 h1, h2, h3, h4, h5 {
-font-weight: 300;
+font-weight: 400;
 margin: 0px;
 }
 
 h1 {
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 font-size: ms(6);
 }
 
 h2 {
 font-size: ms(5);
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 }
 
 h3 {
@@ -605,7 +604,7 @@ font-size: ms(4);
 
 h4 {
 font-size: ms(3);
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 }
 
 h5 {
@@ -614,7 +613,7 @@ font-size: ms(2);
 
 h6 {
 font-size: 1.125em;
-font-family: 'Eczar', serif;color: $gray-dk;
+font-family: 'mauritius', serif;color: $gray-dk;
 margin: 0.5em 0px 0.75em;
 }
 
@@ -626,9 +625,6 @@ cursor: pointer;
 transition: color .3s;
 }
 
-a:hover {
-color: #fff;
-}
 
 
 ul {
@@ -657,7 +653,7 @@ margin-left: auto;
 margin-right: auto;
 padding-bottom: 60px;
 padding-top: 60px;
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 background: #000;
 
  p {
@@ -692,7 +688,7 @@ padding-bottom: 40px;
 justify-content: space-between;
 
 h4 {
-font-family: 'Eczar', serif;font-size: 1.75em;
+font-family: 'mauritius', serif;font-size: 1.75em;
 }
 
 ul {
@@ -700,7 +696,7 @@ padding-right: 0px;
 }
 
 a {
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 border-bottom: 1px dashed;
 margin-bottom: 5px;
 line-height: 1.75;
@@ -867,9 +863,9 @@ margin-top: 0px;
 
 
 p.portfolio-title {
-font-weight: 600;
+font-weight: 400;
 margin: 8px 0px 0px;
-font-family: "Eczar";
+font-family: "mauritius";
 }
 
 p.work-excerpt {
@@ -956,7 +952,7 @@ a.prev {
 border: 1px solid #000;
 padding: 3em;
 color: black;
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 }
 
 a.next {
@@ -964,7 +960,7 @@ border: 1px solid #000;
 padding: 3em;
 margin-left: -1px;
 color: black;
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
 }
 
 
@@ -1072,13 +1068,13 @@ article.blog--list {
 }
 
 .category {
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
     font-size: 0.8em;
 }
 
 a.date {
 
-font-family: 'Eczar', serif;
+font-family: 'mauritius', serif;
     font-size: 0.6em;
     letter-spacing: 0px;
     color: gray;
@@ -1095,8 +1091,8 @@ font-family: 'Eczar', serif;
 h2.post-title {
     line-height: 1.45;
     font-size: 1.5em;
-font-family: 'Eczar', serif;
-    font-weight: 700;
+font-family: 'mauritius', serif;
+    font-weight: 400;
 }
 
 p.post-excerpt {
@@ -1104,7 +1100,7 @@ p.post-excerpt {
 }
 
 a.post-more {
-font-family: 'Eczar', serif;  font-size: 0.75em;
+font-family: 'mauritius', serif;  font-size: 0.75em;
   text-transform: uppercase;
   color: #000;
   float: right;
@@ -1140,7 +1136,7 @@ a.post-more:hover {
 /* HOME */
 
 
-.home #page {
+.home body {
     background: #AD0028;
 }
 
@@ -1153,7 +1149,7 @@ a.post-more:hover {
 }
 
 .home a.name {
-  color: #fff;
+  color: #000;
 }
 
 .home a.button {
@@ -1167,10 +1163,12 @@ a.post-more:hover {
 
 
 .title h1 {
-    font-size: 8rem;
-    line-height: 11rem;
-    margin-top: 3rem;
+    font-size: 2em;
+    font-family: 'work sans';
+    line-height: 7em;
+    margin-top: 0em;
 }
+
 
 
 
@@ -1184,16 +1182,17 @@ a.post-more:hover {
 
 
 
-.about #page, .about .grid-bg,  {
-  background-color: #003923;
-}
 
 .about body, .about p {
-  color: #0B7F50;
+  color: #000;
 }
 
 .about a, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6, {
 color: #0DBC71
+}
+
+.about a.name {
+  color: #000;
 }
 
 .about a.button {
@@ -1259,17 +1258,17 @@ p.work-title {
 
 
 
-.work {
-  background: #2E3192;
-  color: #4E57CC;
-}
 
 .work p, .work body {
-    color: #4E57CC;
+    color: #000;
 }
 
 .work a, .work h1, .work h2, .work h3, .work h4, .work h5, .work h6, {
 color: #6C7EFF;
+}
+
+.work a.name {
+  color: #000;
 }
 
 
@@ -1278,21 +1277,13 @@ color: #6C7EFF;
 }
 
 
-.planner {
-  background: #2B095B;
-  color: #5429A8;
-
-  p, body {
-    color: #5429A8;
-  }
-}
 
 .planner a, .planner h1, .planner h2, .planner h3, .planner h4, .planner h5, .planner h6, {
 color: #773DE8;
 }
 
 .planner a.name {
-  color: #fff;
+  color: #000;
 }
 
 .default {
@@ -1346,9 +1337,12 @@ padding: 0px 10px;
 float: right;
 color: #000;
 font-family: 'work sans', sans-serif;
-font-size: 80%;
+font-size: 1em;
 letter-spacing: 0.25px;
 }
+
+
+
 
 @media screen and (max-width: 960px) {
 
@@ -1374,11 +1368,12 @@ margin: 0px;
 }
 
 a.name {
-text-transform: uppercase;
-letter-spacing: 4px;
-color: #fff;
-font-family: 'work sans';
+font-family: 'mauritius';
+    font-size: 1.95em;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
+
 
 
 
@@ -1386,7 +1381,7 @@ font-family: 'work sans';
 a.name-mobile {
 text-transform: uppercase;
 letter-spacing: 4px;
-font-family: 'Eczar', serif;font-size: 2rem;
+font-family: 'mauritius', serif;font-size: 2rem;
 }
 
 
