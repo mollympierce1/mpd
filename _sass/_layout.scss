@@ -7,6 +7,7 @@ STRUCTURE
 
 body {
   background: #fff;
+  min-height: 100vh;
 }
 
 #page {
@@ -15,6 +16,7 @@ body {
   margin:0px auto;
   padding-bottom: 40px;
   overflow:hidden;
+  min-height: 50vh;
 }
 
 
