@@ -26,6 +26,11 @@ body {
   }
 }
 
+@media only screen and (max-width:640px)  {
+#page {
+    padding: 0px 20px;
+}
+}
 
 
 .container {
@@ -129,6 +134,12 @@ body {
     margin-bottom: 6rem;
 }
 
+@media screen and (max-width: 640px) {
+.grid-bg {
+      padding: 1em 0px;
+}
+}
+
 #grid-bg-title {
     padding-bottom: 0.15em;
     border-bottom: 1px solid #fff;
@@ -137,6 +148,133 @@ body {
     font-family: 'mauritius';
     font-size: 28px;
 }
+
+
+
+
+
+
+/* ==========================================================================
+HEADER
+========================================================================== */
+/*
+========================================================================== */
+
+
+.brand {
+min-width: 40%;
+}
+
+#masthead {
+display: flex;
+flex-wrap: wrap;
+line-height: 90px;
+z-index: 200;
+
+a {
+text-decoration: none;
+}
+}
+
+a.brand.name {
+    padding-left: 0px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a.nav-link {
+    padding-top: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+nav li a {
+padding: 0px 10px;
+float: right;
+color: #000;
+font-family: 'work sans', sans-serif;
+font-size: 1em;
+letter-spacing: 0.25px;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+
+#masthead {
+line-height: 50px;
+}
+
+}
+
+a.name {
+font-family: 'mauritius';
+    font-size: 1.95em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+a.name-mobile {
+text-transform: uppercase;
+letter-spacing: 4px;
+font-family: 'mauritius', serif;font-size: 2rem;
+}
+
+
+
 
 /* ==========================================================================
 COMPONENTS
@@ -411,7 +549,16 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
   }
 }
 
+@media only screen and (max-width:640px)  {
+.th-grid li {
+    width: 100%;
+    margin-bottom: 2em;
+}
 
+.th-grid {
+    flex-wrap: wrap;
+}
+}
 
 .th-grid li img:hover {
     mix-blend-mode: multiply;
@@ -547,6 +694,11 @@ font-family: 'mauritius', serif;    color: #000;
     line-height: 7rem;
 }
 
+@media only screen and (max-width:640px)  {
+#right-button {
+    text-align: center;
+}
+}
 
 /* ==========================================================================
 TEXT
@@ -614,9 +766,12 @@ font-size: ms(2);
 }
 
 h6 {
-font-size: 1.125em;
-font-family: 'mauritius', serif;color: $gray-dk;
-margin: 0.5em 0px 0.75em;
+    font-size: 1.125em;
+    font-family: 'work sans', sans-serif;
+    color: #3a3a38;
+    margin: 0.75em 0px 0.5em;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 a {
@@ -662,7 +817,7 @@ background: #000;
    color: #CECECE;
  }
 
- h4 {
+ h4, h6 {
    color: #fff;
  }
 
@@ -759,7 +914,7 @@ font-family: 'orator-std';
 
 @media screen and (max-width: 640px) {
 #page {
-padding: 0px;
+padding: 1em;
 }
 
 .footer-top {
@@ -796,6 +951,13 @@ text-align: center;
   float: right;
 }
 
+@media only screen and (max-width:640px)  {
+#hrmg {
+    text-align: center;
+    float: none;
+    margin: 0px auto;
+}
+}
 
 /* ==========================================================================
 PORTFOLIO
@@ -1154,6 +1316,10 @@ a.post-more:hover {
   color: #000;
 }
 
+@media only screen and (max-width:640px)  {
+a.name-mobile {font-family: 'work sans';font-size: 1.25rem;color: #fff;}
+}
+
 .home a.button {
     color: #fff;
     background: #F7064B;
@@ -1169,6 +1335,14 @@ a.post-more:hover {
     font-family: 'work sans';
     line-height: 7em;
     margin-top: 0em;
+}
+
+@media only screen and (max-width:640px)  {
+.title h1 {
+    font-size: 3em;
+    line-height: 1.4;
+    margin-top: 1em;
+}
 }
 
 
@@ -1291,165 +1465,4 @@ color: #773DE8;
 .default {
   background: #fff;
   color: #000;
-}
-
-
-/* ==========================================================================
-HEADER
-========================================================================== */
-/*
-========================================================================== */
-
-
-.brand {
-width: 40%;
-}
-
-#masthead {
-display: flex;
-flex-wrap: wrap;
-line-height: 90px;
-z-index: 200;
-
-a {
-text-decoration: none;
-}
-}
-
-nav {
-width: 60%;
-line-height: 90px;
-}
-
-
-nav ul {
-display: flex;
-float: right;
-flex-wrap: wrap;
-}
-
-nav li {
-margin-bottom: 0rem;
-float: none;
-margin: 0px auto;
-}
-
-nav li a {
-padding: 0px 10px;
-float: right;
-color: #000;
-font-family: 'work sans', sans-serif;
-font-size: 1em;
-letter-spacing: 0.25px;
-}
-
-
-
-
-@media screen and (max-width: 960px) {
-
-#masthead {
-line-height: 50px;
-}
-
-.brand {
-width: 100%;
-text-align: center;
-}
-
-nav {
-width: 100%;
-text-align: center;
-line-height: 50px;
-}
-
-nav ul {
-float: none;
-margin: 0px;
-}
-}
-
-a.name {
-font-family: 'mauritius';
-    font-size: 1.95em;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-
-
-
-
-a.name-mobile {
-text-transform: uppercase;
-letter-spacing: 4px;
-font-family: 'mauritius', serif;font-size: 2rem;
-}
-
-
-
-
-@media (min-width: 481px) {
-a.name-mobile {
-display: none;
-}
-}
-
-@media screen and (max-width: 480px) {
-a.name {
-display: none; }
-
-.brand {
-line-height: 60px;
-}
-
-nav {
-line-height: 20px;
-margin-bottom: 18px;
-}
-}
-
-
-
-
-
-/* ==========================================================================
-MOBILE
-========================================================================== */
-/*
-========================================================================== */
-
-
-
-@media only screen and (max-width:640px)  {
-  .title h1 {
-    font-size: 4rem;
-    line-height: 5rem;
-    margin-top: 3rem;
-}
-
-#page {
-    padding: 0px 20px;
-}
-
-a.name-mobile {font-family: 'work sans';font-size: 1.25rem;color: #fff;}
-
-.th-grid li {
-    width: 100%;
-    margin-bottom: 2em;
-}
-
-.th-grid {
-    flex-wrap: wrap;
-}
-
-#right-button {
-    text-align: center;
-}
-
-#hrmg {
-    text-align: center;
-    float: none;
-    margin: 0px auto;
-}
 }
