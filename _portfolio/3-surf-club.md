@@ -2,10 +2,16 @@
 layout: portfolio
 title:  "Executive Surf Club"
 collection: portfolio
-featured-image: images/surf-club.png
+featured-image: images/surf-club-mockup-2.png
 excerpt: "In-Store Display, Menu Graphic Design"
 ---
 
+![Executive Surf Club]({{ site.url }}/images/surf-club-mockup-1.png)
+{: .portfolio-center}
+![Executive Surf Club]({{ site.url }}/images/surf-club-mockup-3.png)
+{: .portfolio-center}
+![Executive Surf Club]({{ site.url }}/images/surf-club-mockup-4.png)
+{: .portfolio-center}
 ![Executive Surf Club]({{ site.url }}/images/surf-club-2.png)
 {: .portfolio-center .no-shadow}
 ![Executive Surf Club]({{ site.url }}/images/surf-club-3.png)
