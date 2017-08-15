@@ -8,6 +8,11 @@ STRUCTURE
 body {
   background: #fff;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
 }
 
 #page {
@@ -535,6 +540,7 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
 
   li {
     width: 32%;
+    background-color: coral;
   }
 
   h5 {
@@ -543,11 +549,12 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
     letter-spacing: 1px;
   }
 
-  img {
-   -webkit-transition: mix-blend-mode 0.2s ease-out;
-   transition: mix-blend-mode 0.2s ease-out;
-  }
 }
+
+.th-grid li img:hover {
+    mix-blend-mode: screen;
+}
+
 
 @media only screen and (max-width:640px)  {
 .th-grid li {
@@ -560,9 +567,6 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
 }
 }
 
-.th-grid li img:hover {
-    mix-blend-mode: multiply;
-}
 
 
 #home-capabilities {
@@ -733,7 +737,7 @@ font-style: normal;
 font-weight: 300;
 font-size: ms(1);
 letter-spacing: 1.5px;
-color: #AFAFAF;
+color: #000;
 line-height: 1.45;
 }
 
@@ -744,25 +748,25 @@ margin: 0px;
 
 h1 {
 font-family: 'mauritius', serif;
-font-size: ms(6);
+font-size: 2em;
 }
 
 h2 {
-font-size: ms(5);
+font-size: 1.75em;
 font-family: 'mauritius', serif;
 }
 
 h3 {
-font-size: ms(4);
+font-size: 1.5em;
 }
 
 h4 {
-font-size: ms(3);
+font-size: 1.35em;
 font-family: 'mauritius', serif;
 }
 
 h5 {
-font-size: ms(2);
+font-size: 1.25em;
 }
 
 h6 {
@@ -770,7 +774,7 @@ h6 {
     font-family: 'work sans', sans-serif;
     color: #3a3a38;
     margin: 0.75em 0px 0.5em;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -780,6 +784,8 @@ text-decoration: none;
 cursor: pointer;
 -webkit-transition: color .3s;
 transition: color .3s;
+font-weight: 400;
+letter-spacing: 0px;
 }
 
 
@@ -817,7 +823,7 @@ background: #000;
    color: #CECECE;
  }
 
- h4, h6 {
+ h2, h4, h6 {
    color: #fff;
  }
 
@@ -826,6 +832,11 @@ background: #000;
    border-bottom: 0px;
    color: #fff;
  }
+
+h6 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
 }
 
 #site-footer .back-to-top a {
@@ -981,6 +992,10 @@ grid-template-columns: 1fr 1fr;
 img {
 width: 100%;
 }
+
+img:hover {
+mix-blend-mode: screen;
+}
 }
 
 
@@ -988,6 +1003,10 @@ width: 100%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+}
+
+.portfolio-img {
+    background: #6C7EFF;
 }
 
 .portfolio-grid article {
@@ -1030,6 +1049,7 @@ p.portfolio-title {
 font-weight: 400;
 margin: 8px 0px 0px;
 font-family: "mauritius";
+
 }
 
 p.work-excerpt {
@@ -1352,11 +1372,6 @@ a.name-mobile {font-family: 'work sans';font-size: 1.25rem;color: #fff;}
 
 
 
-.work-grid img {-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */filter: grayscale(100%);}
-
-
-
-
 
 
 .about body, .about p {
@@ -1383,9 +1398,18 @@ color: #0DBC71
 
 #headshot {
   background-color: #0B7F50;
+   -webkit-transition: mix-blend-mode 0.2s ease-out;
+   transition: mix-blend-mode 0.2s ease-out;
 
-  img:hover {
-  mix-blend-mode: exclusion;
+
+  a img {
+   -webkit-transition: mix-blend-mode 0.2s ease-out;
+   transition: mix-blend-mode 0.2s ease-out;
+  }
+
+
+  a img:hover {
+  mix-blend-mode: screen;
 }
 }
 
@@ -1430,7 +1454,37 @@ p.work-title {
 }
 
 
+.work-title {
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+    top: 5px;
+    margin-right: 40px;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+    -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
 
+.work-title a {
+  color: #000;
+}
+
+.th-grid li:hover .work-title {
+    opacity: 1;
+}
+
+
+
+.th-grid img {
+    position: relative;
+    z-index: 1;
+}
+
+li {
+    position: relative;
+}
 
 
 
@@ -1465,4 +1519,42 @@ color: #773DE8;
 .default {
   background: #fff;
   color: #000;
+}
+
+
+
+
+
+
+
+
+p {
+    font-weight: 300;
+    letter-spacing: 0.25px;
+    line-height: 1.35;
+}
+
+li {
+    font-size: 1.05em;
+    letter-spacing: 0px;
+    margin: 0px 0px 4px 0px;
+}
+
+p.work-title {
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+a.button {
+    font-weight: 500;
+}
+
+#site-footer a {
+    font-family: "work sans";
+    font-weight: 400;
+    line-height: 1.5px;
+}
+
+i.fa {
+    margin: 10px 5px 10px 0px;
 }
