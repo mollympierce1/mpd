@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title:  "AMST - artRageous: Alter Egos"
+title:  "alterEgos"
 collection: portfolio
 featured-image: images/amst-mockup-9.png
-excerpt: "artRageous: Alter Egos"
+excerpt: "artRageous: alterEgos"
 client: Art Museum of South Texas
 categories:
   - graphic design
