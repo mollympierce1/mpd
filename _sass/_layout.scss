@@ -196,7 +196,7 @@ a.brand.name {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #6410E8;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -265,7 +265,6 @@ a.name {
 font-family: 'mauritius';
     font-size: 1.95em;
     font-weight: 400;
-    letter-spacing: 2px;
 }
 
 
@@ -288,7 +287,9 @@ COMPONENTS
 ========================================================================== */
 
 
-
+.page-image img {
+    width: 100%;
+}
 
 
 .tagline {
