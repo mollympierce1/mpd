@@ -1,14 +1,29 @@
 <header id="masthead">
-  <nav role="navigation"  class="topnav" id="myTopnav">
-    <a class="brand name" role="heading" href="{{ site.url }}/">Molly Pierce</a>
-    {% for link in site.data.navigation %}
-    {% if link.url contains 'http' %}
-        {% assign domain = '' %}
-        {% else %}
-        {% assign domain = site.url %}
-    {% endif %}
-    <a href="{{ domain }}{{ link.url }}" class="nav-link" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
-    {% endfor %}
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  <nav role="navigation"  class="topnav">
+    <div class="logo"><a class="brand name" role="heading" href="{{ site.url }}/">Molly Pierce</a></div>
+    <div><h4 class="hide">Navigation</h4>
+      <ul>
+        <li><a href="#">All Work</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Visual Feed</a></li>
+      </ul>
+    </div>
+    <div class="hide"><h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:mollympierce@gmail.com">mollympierce@gmail.com</a></li>
+        <li><a href="#">361 946 2240</a></li>
+        <li><a href="#">Corpus Christi, TX</a></li>
+      </ul>
+    </div>
+    <div class="hide"><h4>Follow</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Behance</a></li>
+        <li><a href="#">Tumblr</a></li>
+      </ul>
+    </div>
   </nav>
 </header><!-- /.masthead -->

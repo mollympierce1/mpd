@@ -173,7 +173,6 @@ min-width: 40%;
 #masthead {
 display: flex;
 flex-wrap: wrap;
-line-height: 90px;
 z-index: 200;
 
 a {
@@ -190,21 +189,35 @@ a.brand.name {
 .topnav {
     overflow: hidden;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    div {
+      width: auto;
+      min-width: 18%;
+    }
+
+ h4 {
+    margin-top: 11px;
+    margin-bottom: 8px;
+}
+
+ li {
+    font-size: 1em;
+    margin: 0px 0px 2px 0px;
+}
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
     display: block;
     color: #6410E8;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
-a.nav-link {
-    padding-top: 15px;
-}
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -216,34 +229,24 @@ a.nav-link {
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700px) {
+  .topnav .logo {
+    width: 100%;
     display: block;
-  }
+    min-width: 100%;
+    margin-bottom: 20px;
+}
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+@media screen and (max-width: 500px) {
+.topnav .hide {
+  display: none;
+}
 }
 
 
 nav li a {
-padding: 0px 10px;
-float: right;
 color: #000;
 font-family: 'work sans', sans-serif;
 font-size: 1em;
@@ -252,30 +255,12 @@ letter-spacing: 0.25px;
 
 
 
-
-@media screen and (max-width: 960px) {
-
-#masthead {
-line-height: 50px;
-}
-
-}
-
 a.name {
 font-family: 'mauritius';
     font-size: 1.95em;
     font-weight: 400;
 }
 
-
-
-
-
-a.name-mobile {
-text-transform: uppercase;
-letter-spacing: 4px;
-font-family: 'mauritius', serif;font-size: 2rem;
-}
 
 
 
@@ -735,7 +720,7 @@ font-family: 'Work Sans', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: ms(1);
-letter-spacing: 1.5px;
+letter-spacing: 0px;
 color: #000;
 line-height: 1.45;
 }
@@ -922,7 +907,7 @@ font-family: 'orator-std';
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 960px) {
 #page {
 padding: 1em;
 }

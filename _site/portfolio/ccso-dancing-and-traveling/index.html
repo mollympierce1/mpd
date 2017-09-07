@@ -34,7 +34,6 @@
   <script src="https://use.typekit.net/lye5jyf.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="http://localhost:4000/js/plugins/instafeed.min.js"></script>
-  <script type="text/javascript" src="http://localhost:4000/js/plugins/jquery.fullPage.js"></script>
   <script>
   document.documentElement.className = 'js';
   </script>
@@ -67,27 +66,37 @@
 <body id="js-body" class="default">
     <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
 
-    <div id="page" class="animsition default">
-      <header id="masthead">
-  <nav role="navigation"  class="topnav" id="myTopnav">
-    <a class="brand name" role="heading" href="http://localhost:4000/">Molly Pierce</a>
-    
-    
-    <a href="http://localhost:4000/profile" class="nav-link" >Profile</a>
-    
-    
-    <a href="http://localhost:4000/work" class="nav-link" >Work</a>
-    
-    
-    <a href="http://localhost:4000/contact" class="nav-link" >Contact</a>
-    
-    
-    <a href="https://mollypiercedesign.tumblr.com/" class="nav-link" target="_blank">INSP'D</a>
-    
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <header id="masthead">
+  <nav role="navigation"  class="topnav">
+    <div class="logo"><a class="brand name" role="heading" href="http://localhost:4000/">Molly Pierce</a></div>
+    <div><h4 class="hide">Navigation</h4>
+      <ul>
+        <li><a href="#">All Work</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Visual Feed</a></li>
+      </ul>
+    </div>
+    <div class="hide"><h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:mollympierce@gmail.com">mollympierce@gmail.com</a></li>
+        <li><a href="#">361 946 2240</a></li>
+        <li><a href="#">Corpus Christi, TX</a></li>
+      </ul>
+    </div>
+    <div class="hide"><h4>Follow</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Behance</a></li>
+        <li><a href="#">Tumblr</a></li>
+      </ul>
+    </div>
   </nav>
 </header><!-- /.masthead -->
 
+    <div id="page" class="animsition default">
       <div class="container">
         <div id="main" role="main">
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
