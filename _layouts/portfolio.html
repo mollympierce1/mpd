@@ -7,16 +7,10 @@ layout: default
 			<div class="page-image">
 				<img src="{{ site.url }}/{{ page.featured-image }}" alt="{{ page.title }}" />
 			</div>
-			<div class="portfolio-intro">
-				<h6 class="client">{{ page.client }}</h6>
-				<h4 class="portfolio-title">{{ page.title }}</h4>
-				<p class="page-excerpt" itemprop="description">{{ page.excerpt | strip_html }}</p>
-			</div>
-		<div class="inner">
+		<div>
 			<div id="content" class="page-content" itemprop="articleBody">
 			{{ content }}
-			</div><!-- /.content -->
-		</div><!-- /.inner -->
+			</div>
 		<div class="PageNavigation">
 			<a class="prev animsition-link" href="{{ site.url }}{{page.previous.url}}">{% if page.previous.url %}Previous: {{page.previous.title}}{% endif %}</a>
 		 <a class="next animsition-link" href="{{ site.url }}{{page.next.url}}">{% if page.next.url %}Next: {{page.next.title}}{% endif %}</a>

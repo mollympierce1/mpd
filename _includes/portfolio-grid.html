@@ -2,6 +2,6 @@
 	<a href="{{ work.url }}" title="{{ work.title }}"><div  class="portfolio-img"><img src="{{ work.featured-image }}" /></div></a>
 			<div class="portfolio-content">
 				<p class="portfolio-title"><a href="{{ work.url }}" title="{{ work.title }}" class="work-teaser">{{ work.title }}</a></p>
-				<p class="work-excerpt" itemprop="description">{{ work.excerpt | strip_html | truncate: 160 }}</p>
+				<p class="work-excerpt" itemprop="description">{{ work.services | strip_html | truncate: 160 }}</p>
 			</div>
 </article>
