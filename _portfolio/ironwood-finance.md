@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Ironwood Finance"
 collection: portfolio
-featured-image: images/ironwood-finance-1.jpg
+featured-image: /images/ironwood-finance-1.jpg
 services: "Website Design, Lead Generation"
 ---
 
@@ -25,7 +25,7 @@ services: "Website Design, Lead Generation"
 ![Ironwood Finance]({{ site.url }}/images/ironwood-finance-3.jpg)
 {: .two-thirds .shadow}
 ![Ironwood Finance]({{ site.url }}/images/ironwood-finance-4.jpg)
-{: .two-thirds .shadow .right} 
+{: .two-thirds .shadow .right}
 
 
 

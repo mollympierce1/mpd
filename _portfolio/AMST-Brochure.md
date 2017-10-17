@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "AMST Quarterly IV"
 collection: portfolio
-featured-image: images/amst-q3-mockup-9.png
+featured-image: /images/amst-q3-mockup-9.png
 excerpt:
 client: Art Museum of South Texas
 services: Editorial Design

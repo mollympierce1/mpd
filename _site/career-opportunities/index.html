@@ -68,34 +68,82 @@
     <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
 
     <div id="page" class="animsition default">
-          <header id="masthead">
-  <nav role="navigation"  class="topnav">
-    <div class="logo"><a class="brand name" role="heading" href="http://localhost:4000/">Molly Pierce</a></div>
-    <div><h4 class="hide">Navigation</h4>
-      <ul>
-        <li><a href="http://localhost:4000/work">All Work</a></li>
-        <li><a href="http://localhost:4000/profile">Profile</a></li>
-        <li><a href="http://localhost:4000/contact">Contact</a></li>
-        <li><a href="https://savee.it/mollympierce/collections/">Visual Feed</a></li>
-      </ul>
-    </div>
-    <div class="hide"><h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:mollympierce@gmail.com">mollympierce@gmail.com</a></li>
-        <li><a href="#">361 946 2240</a></li>
-        <li><a href="#">Corpus Christi, TX</a></li>
-      </ul>
-    </div>
-    <div class="hide"><h4>Follow</h4>
-      <ul>
-        <li><a href="https://www.facebook.com/molly.pierce.31?ref=bookmarks">Facebook</a></li>
-        <li><a href="https://www.instagram.com/mollypierce.design/">Instagram</a></li>
-        <li><a href="https://www.pinterest.com/mollympierce">Pinterest</a></li>
-        <li><a href="https://www.behance.net/mollypiercedesign">Behance</a></li>
-      </ul>
-    </div>
-  </nav>
-</header><!-- /.masthead -->
+          <header role="banner"  class="topnav" id="masthead">
+  <h1 title="Molly Pierce Design" class="logo" role="heading"><a class="brand name"  href="http://localhost:4000/">Molly Pierce Design</a></h1>
+  <div><a href="http://localhost:4000/work"><h4 class="hide">Work</h4></a></div>
+  <div><a href="http://localhost:4000/profile"><h4>About</h4></a></div>
+  <button class="navbutton" aria-label="open the navigation">Menu</button>
+	<section class="navbg"></section>
+<nav role="navigation">
+  <div class="nav-inner">
+  <div class="nav-column"><h4>Navigation</h4>
+    <ul>
+      <li><a href="http://localhost:4000/work">All Work</a></li>
+      <li><a href="http://localhost:4000/profile">Profile</a></li>
+      <li><a href="http://localhost:4000/contact">Contact</a></li>
+      <li><a href="https://savee.it/mollympierce/collections/">Visual Feed</a></li>
+    </ul>
+  </div>
+  <div class="nav-column"><h4>Contact</h4>
+    <ul>
+      <li><a href="mailto:mollympierce@gmail.com">mollympierce@gmail.com</a></li>
+      <li><a href="tel:3619462240">361 946 2240</a></li>
+      <li><a>Corpus Christi, TX</a></li>
+    </ul>
+  </div>
+  <div class="nav-column"><h4>Follow</h4>
+    <ul>
+      <li><a href="https://www.facebook.com/molly.pierce.31?ref=bookmarks">Facebook</a></li>
+      <li><a href="https://www.instagram.com/mollypierce.design/">Instagram</a></li>
+      <li><a href="https://www.pinterest.com/mollympierce">Pinterest</a></li>
+      <li><a href="https://www.behance.net/mollypiercedesign">Behance</a></li>
+    </ul>
+  </div>
+</div>
+  <h1 class="logo"><a class="brand name" role="heading" href="http://localhost:4000/">Molly Pierce Design</a></h1>
+</nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$('.navbutton').click(function() {
+  $('.navbutton').text(function(i, text){
+      return text === "Menu" ? "Close" : "Menu";
+  })
+  $(this).toggleClass("close");
+  $('.navbg').toggleClass("in-view");
+  $('nav').toggleClass("in-view");
+  $('html').toggleClass( "stop" );
+
+  $('.navbg').bind('touchmove', function(e) {
+          e.preventDefault();
+      });
+});
+
+$('.navbg').click(function() {
+  $('.navbutton').text(function(i, text){
+      return text === "Menu" ? "Close" : "Menu";
+  })
+  $('.navbutton').removeClass("close");
+  $('.navbg').removeClass("in-view");
+  $('nav').removeClass("in-view");
+  $('html').removeClass( "stop" );
+});
+
+</script>
 
       <div class="container">
         <div class="flex block">
@@ -113,7 +161,7 @@
 		<li><h2>Molly Pierce</h2></li>
 		<li>
 			<h6>Inquiries:</h6>
-			<a href="tel:3612488625">(361) 946-2240</a><br />
+			<a href="tel:3619462240">(361) 946-2240</a><br />
 			<a href="mollympierce@gmail.com">mollympierce@gmail.com</a><br />
 			&nbsp;
 			<h6>Social:</h6>

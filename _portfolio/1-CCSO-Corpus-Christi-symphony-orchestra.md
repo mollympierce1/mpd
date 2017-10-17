@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Corpus Christi Symphony Orchestra"
 collection: portfolio
-featured-image: images/ccso-mockup-front.png
+featured-image: /images/ccso-mockup-front.png
 services: "Editorial Design, Event Marketing, Graphic Design"
 ---
 

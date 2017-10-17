@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "CCSO - A Night at The Movies"
 collection: portfolio
-featured-image: images/ccso-card-2.png
+featured-image: /images/ccso-card-2.png
 services: "Event Branding, Graphic Design"
 ---
 

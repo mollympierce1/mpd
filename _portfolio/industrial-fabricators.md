@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Industrial Fabricators of Corpus Christi"
 collection: portfolio
-featured-image: images/indfab-3.jpg
+featured-image: /images/indfab-3.jpg
 services: "Website Design, Graphic Design"
 ---
 

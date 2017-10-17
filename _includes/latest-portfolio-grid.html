@@ -1,7 +1,8 @@
-  <ul class="th-grid">
+  <ul>
       {% for work in site.portfolio limit:3 %}
-    <li><a href="{{ site.url }}{{ work.url }}" title="{{ work.title }}" class="animsition-link"><img src="{{ work.featured-image }}" alt="">    </a><br />
-      <p class="work-title"><a href="{{ site.url }}{{ work.url }}" title="{{ work.title }}" class="animsition-link">{{ work.title }}</a></p>
+    <li>
+      <a href="{{ site.url }}{{ work.url }}" title="{{ work.title }}" class="animsition-link portfolio-tile" style="background-image:url('{{ site.url }}{{ work.featured-image }}')" alt="{{ work.title }}">&nbsp;</a><br />
+      <a href="{{ site.url }}{{ work.url }}" title="{{ work.title }}" class="animsition-link"><p class="work-title">{{ work.title }}</p></a>
     </li>
       {% endfor %}
   </ul>

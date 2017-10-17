@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Corpus Christi Symphony Orchestra"
 collection: portfolio
-featured-image: images/ccso-card.png
+featured-image: /images/ccso-card.png
 services: "Event Branding, Graphic Design"
 ---
 

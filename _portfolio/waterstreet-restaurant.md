@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Waterstreet Oyster Bar"
 collection: portfolio
-featured-image: images/waterstreet-oyster-2.jpg
+featured-image: /images/waterstreet-oyster-2.jpg
 services: "Restaurant Identity Graphic Design"
 ---
 

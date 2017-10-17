@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Corpus Christi Symphony Orchestra"
 collection: portfolio
-featured-image: images/ccso-mockup-web-front.png
+featured-image: /images/ccso-mockup-web-front.png
 excerpt: The Corpus Christi Symphony Orchestra is one of the only professional Performing Arts companies in the Coastal Bend. It is made up of an impressive core of artists and advocates, and elevates the level of the cultural fabric of our community. Their new website rises to that level, with a classic but approachable aesthetic that allows them to reach their audience with ease.
 services: Website Design
 ---

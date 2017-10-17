@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "90 Years of Harbor Playhouse"
 collection: portfolio
-featured-image: images/harbor-three-screens.jpg
+featured-image: /images/harbor-three-screens.jpg
 services: "Website Design, Graphic Design"
 ---
 

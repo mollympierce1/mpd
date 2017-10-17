@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Sterling Personnel"
 collection: portfolio
-featured-image: images/sterling-screens.jpg
+featured-image: /images/sterling-screens.jpg
 services: "Website Design"
 ---
 

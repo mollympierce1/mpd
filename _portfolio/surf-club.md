@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Executive Surf Club"
 collection: portfolio
-featured-image: images/surf-club.jpg
+featured-image: /images/surf-club.jpg
 services: "In-Store Display, Menu Graphic Design"
 ---
 

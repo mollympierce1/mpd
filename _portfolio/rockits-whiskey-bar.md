@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Rockit's Whiskey Bar & Saloon"
 collection: portfolio
-featured-image: images/rockits-Devices-mockup.jpg
+featured-image: /images/rockits-Devices-mockup.jpg
 services: "Website Design"
 ---
 
