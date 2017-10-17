@@ -3,7 +3,8 @@ layout: portfolio
 title:  "Artrageous: alterEgos"
 collection: portfolio
 featured-image: /images/amst-mockup-9.png
-services: "Event Branding, Graphic Design"
+services: Event Branding, Graphic Design
+excerpt: Event Branding, Graphic Design
 client: Art Museum of South Texas
 ---
 
