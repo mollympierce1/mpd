@@ -1885,3 +1885,103 @@ a.button {
 i.fa {
     margin: 10px 5px 10px 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:480px)  {
+
+a.brand.name {
+    font-size: 2.75em;
+}
+
+.top-link {
+    display: none;
+}
+
+.title h1 {
+    font-size: 1.85em;
+    width: 100%;
+}
+
+div#page {
+    border-top: 4px solid #000;
+}
+
+
+.title {
+    margin-top: 4em;
+}
+
+.grid-bg {
+    margin: 0 -1em;
+    padding: 1em;
+}
+
+.th-grid li {
+    max-width: 460px;
+    height: 34vh;
+    margin-bottom: 10px;
+}
+
+
+.th-grid a {
+    width: 100%;
+}
+
+.th-grid ul {
+    flex-wrap: wrap;
+}
+
+p.work-title {
+    opacity: 1;
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+    background: #000;
+    padding: 0px;
+    line-height: 0.95;
+}
+
+.work-title {
+    left: 0px;
+    top: 27px;
+}
+
+.right-button {
+    text-align: left;
+    float: left;
+}
+
+#right-button {
+    text-align: left;
+}
+
+#site-footer {
+    text-align: left;
+}
+
+nav .nav-inner {
+    margin: 0px;
+    font-size: 0.65em;
+}
+
+h1.logo {
+    bottom: 0px;
+    right: 20px;
+    font-size: 8px;
+}
+}
