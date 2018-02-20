@@ -8,22 +8,43 @@
     <div id="page" class="animsition">
       {% include header.html %}
       <div class="container hero">
-        <div class="title">
-          <h1>I'm an independent graphic & web designer in Corpus Christi, Texas. <a class="home-text" href="{{ site.url }}/work">View my work,</a> or <a class="home-text" href="mailto:mollympierce@gmail.com">contact me</a> to brainstorm about what we can create for your business.</h1>
+        <div class="full-width">
+          <img class="" src="images/MPD-best-photo.jpg"></img>
         </div>
-      </div>
-      <div class="container block">
-        <div class="grid-bg">
-          <h5 id="grid-bg-title">Recent Projects</h5>
-          <div class="th-grid">
-            {% include latest-portfolio-grid.html %}
-          </div>
-          <div id="right-button">
-            <a class="button home-text" href="{{ site.url }}/work">View My Work</a><br />
-          </div>
-        </div>
-      </div>
+        <div class="flex flex-wrap">
+          <div id="slideshow" class="one-half">
+       <div>
+         <img src="/images/mpd-amst-booklet-5.png">
+       </div>
+       <div>
+         <img src="/images/mpd-poster-ccso-violins.png">
+       </div>
+       <div>
+         <img src="/images/mpd-poster-executive-surf-club2.png">
+       </div>
     </div>
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    },  5000);
+    </script>
+        <div class="one-half">
+          <div class="title">
+            <h1>Design worth <em>celebrating!</em></h1>
+          </div>
+          <h3>I work with businesses, cultural institutions, hosts and hostesses to strengthen much-loved brands, promote fabulous events, and design stunning promotional pieces. Designing is the fun part! Make sure you enjoy it.</h3>
+          <h4><a href="{{ site.url }}/services">Learn more about my design services.</a></h4>
+        </div>
+    </div>
+  </div>
+</div>
   {% include footer.html %}
   </body>
   {% include bottom-bar.html %}

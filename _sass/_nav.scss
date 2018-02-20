@@ -1,0 +1,276 @@
+
+/* ==========================================================================
+HEADER
+========================================================================== */
+/*
+========================================================================== */
+#masthead {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 200;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.topnav {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  min-width: auto;
+
+  div {
+    width: auto;
+    min-width: 18%;
+  }
+
+  a {
+    display: block;
+    color: #6410E8;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 0;
+    font-weight: 300;
+    margin: 0 0 2px;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  h4 {
+    color: #6410E8;
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+.brand {
+  min-width: 40%;
+}
+
+a.name {
+  padding-left: 0;
+  font-size: 1.95em;
+  font-weight: 400;
+  letter-spacing: 1.25px;
+  line-height: 0.95;
+}
+
+.navbutton,
+button {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  padding: 5px 30px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.navbutton:hover,
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.logo {
+  vertical-align: baseline;
+}
+
+#masthead {
+  align-items: center;
+}
+
+.topnav .in-view a,
+.topnav .in-view h4 {
+  color: black !important;
+}
+
+.topnav .in-view a:hover {
+  color: gold !important;
+}
+
+.logo {
+  font-size: 8px;
+  bottom: 0;
+  right: 20px;
+}
+
+.nav-inner {
+  margin: 0;
+  font-size: 0.65em;
+}
+
+
+.navbg,
+nav {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbg,
+nav {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbg {
+  position: fixed;
+  z-index: 102;
+  width: 100%;
+  background-color: transparent;
+  opacity: 0;
+}
+
+nav {
+  position: fixed;
+  background: yellow !important;
+  z-index: 1000;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .logo {
+    width: 100%;
+  }
+
+  .nav-inner {
+    width: 90%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-column {
+    min-width: 25%;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+  ul {
+    font-size: 1.75em;
+    margin-top: 0.25em;
+  }
+
+  .logo a.name {
+    font-size: 2.5em;
+    color: #F7064B;
+  }
+
+  .logo {
+    position: absolute;
+    right: 5vh;
+    bottom: 2.5vh;
+    width: auto;
+    text-align: right;
+  }
+
+  .navbg .logo a.name {
+    color: #000;
+    font-size: 3.5em;
+  }
+
+  ul li a {
+    color: #000;
+  }
+
+  .logo a.name {
+    color: #000;
+    font-size: 3.5em;
+  }
+
+  h4 {
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+  }
+
+  a {
+    color: #000;
+  }
+
+  nav a:hover {
+    color: gold !important;
+  }
+}
+
+.navbutton,
+figcaption {
+  font-family: 'inherit';
+}
+
+nav {
+  opacity: 0;
+}
+
+figcaption {
+  margin: 15px 0 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+nav.in-view {
+  top: 53px;
+  left: 50px;
+  right: 0;
+  bottom: 55px;
+}
+
+.logo {
+  font-size: 12px;
+  bottom: 40px;
+  right: 40px;
+}
+
+nav .nav-inner {
+  margin: 35px 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.in-view h4 {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.topnav li a {
+  font-size: 0.5em;
+}
+
+nav.in-view {
+  font-size: 35px;
+}
+
+nav .nav-column {
+  min-width: none;
+  padding: 1em;
+}
+
+.navbg.in-view,
+.navbg:target,
+nav.in-view,
+nav:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.in-view {
+  -webkit-overflow-scrolling: touch;
+}
+
+.screen {
+  opacity: 0.25;
+}

@@ -1,69 +1,97 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="intro">
-  <div class="inner centered">
-    <h2>We use high-quality design, complex metrics analyisis, and strategic consumer targeting to help businesses reach more customers and drive more sales.</h2>
+{% include head.html %}
+
+<body id="js-body" class="about">
+    {% include browser-upgrade.html %}
+    <div id="page" class="animsition">
+      {% include header.html %}
+      <div class="container hero">
+        <div class="full-width">
+          <img class="" src="images/MPD-bg-photo.jpg"></img>
+        </div>
+        <div class="title">
+          &nbsp;
+        </div>
+      </div>
+      <div class="container flex">
+        <div class="one-half">
+  <div><p class="detail">Looking for a graphic designer?
+    I am available for:</p>
+  <h5 style="color: black;">Web Design<br />
+    Graphic Design<br />
+    Branding<br />
+    Logo Design<br />
+    Digital Marketing Consultation<br />
+    Social Media Marketing Consultation<br />
+    Wordpress Web Development<br />
+    Editorial Design<br />
+    Posters, Brochures, Mailers, Advertising, Stationary<br />
+    & more!
+  </h4>
   </div>
-</div>
-<div class="mid">
-  <img src="images/wkmc-1.jpg">
-  <div class="image-credit">
-    Project: WKMC Staff Photography
-  </div>
-</div>
-<div class="inner centered block">
-  <h2>Build more than a website.</h2>
-  <p>Go beyond a simple turn-key website and make your business stand out with exceptional photography, branding, design and interactivity. Our services come a la carte or as a package carefully designed to meet the goals strategically planned out for your organization’s long term growth.</p>
-</div>
-  <div class="services inner block" >
-    <div class="services-item">
-      <h4>Strategy</h4>
-      <p>We take a comprehensive look at our clients' business goals and develop marketing strategies that will ignite a growing audience.</p>
-      <ul>
-        <li>Branding</li>
-        <li>Analytics</li>
-        <li>Messaging</li>
-        <li>Content Strategy</li>
-      </ul>
+          <div class="clients top-block one-half">
+          <p>I've had the pleasure of partnering with some of Corpus Christi's finest businesses, including:</p>
+          <p>&nbsp;</p>
+          <div class="flex">
+            <div class="one-half">
+              <ul>
+                <li>Water Street Oyster Bar</li>
+                <li>Gill Landscape Nursery</li>
+                <li>WKMC Architects</li>
+                <li>Harbor Playhouse</li>
+                <li>Executive Surf Club</li>
+                <li>Corpus Christi Symphony Orchestra</li>
+                <li>Art Museum of South Texas</li>
+                <li>Texas Surf Museum</li>
+                <li>Dorsey & Clower Real Estate Appraisal</li>
+              </ul>
+            </div>
+            <div class="one-half">
+              <ul>
+                <li>Gignac & Associates Architecture</li>
+                <li>Pearl Restaurant Group, (SF, CA)</li>
+                <li>Stand Out! Photo Forum, (NY, NY)</li>
+                <li>Harwin Camera (NY, NY)</li>
+                <li>Concrete Street Amphitheater</li>
+                <li>Rockit’s Whiskey Bar</li>
+                <li>Sterling Personnel + Sterling HR</li>
+                <li>Ironwood Finance</li>
+                <li>Industrial Fabricators Corpus Christi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container block">
+        <div class="grid-bg">
+          <h5 id="grid-bg-title">Recent Projects</h5>
+          <div class="th-grid">
+            {% include latest-portfolio-grid.html %}
+          </div>
+          <div id="right-button">
+            <a class="button" href="{{ site.url }}/work">View My Work</a><br />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container block">
+        <div class="inner block" id="instafeed"></div>
+      </div> -->
     </div>
-    <div class="services-item">
-      <h4>Design</h4>
-      <p>We uphold the belief that high-quality design aesthetics make marketing more successful, and never settle for mediocre visual storytelling.</p>
-      <ul>
-        <li>Graphic Design</li>
-        <li>Print Design</li>
-        <li>Branding, Identity & Campaigns</li>
-        <li>Photography, Film & Copy</li>
-      </ul>
-    </div>
-    <div class="services-item">
-      <h4>Development</h4>
-      <p>We value the power of technological innovation to improve workflow, streamline tasks, and strengthen output.</p>
-      <ul>
-        <li>Website Design</li>
-        <li>Software Development</li>
-        <li>Data Management</li>
-        <li>App Development</li>
-      </ul>
-    </div>
-    <div class="services-item">
-      <h4>Growth</h4>
-      <p>Our client partnerships are designed for long-term results. We strive to develop relationships with our clients, and become a part of their brand's evolution.</p>
-      <ul>
-        <li>Analytics & Reporting</li>
-        <li>Creative & Technical Supoport</li>
-        <li>Email & Social Integration</li>
-        <li>Advertising Campaign Management</li>
-      </ul>
-    </div>
-  </div>
-  <div style="text-align: center;" class="block">
-    <a class="button animsition-link" href="/work">View Our Work</a>
-  </div>
-  <div class="testimonial border">
-    <p>“Boosted overall operations and efficiency.”</p>
-    <h6>Liza, The City of Corpus Christi Learning Institute</h6>
-  </div>
-  {% include feature-box.html %}
+  {% include footer.html %}
+  {% include bottom-bar.html %}
+  {% include animsition.html %}
+<!--   <script type="text/javascript">
+      var userFeed = new Instafeed({
+          get: 'user',
+          userId: '8423221',
+          clientId: '5f5b3dd757334daebc68e1a699e3b759',
+          limit: '5',
+          resolution: 'low_resolution'
+      });
+      userFeed.run();
+  </script> -->
+  </body>
+</html>

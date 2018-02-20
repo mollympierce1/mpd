@@ -25,7 +25,7 @@ body {
 
 @media only screen and (min-width:960px) {
   #page, .page-white, #site-footer {
-    padding:0 3.4375rem
+    padding:0 5.4375rem
   }
 }
 
@@ -109,10 +109,10 @@ body {
 
 .light {
   background: #fff;
-  color: $gray-md;
+  color: $blue-lt;
 
   p {
-    color: $gray-md;
+    color: $blue-lt;
   }
 }
 
@@ -126,8 +126,8 @@ body {
 }
 
 .border {
-  border-top: 1px solid $gray-md;
-  border-bottom: 1px solid $gray-md;
+  border-top: 1px solid $blue-lt;
+  border-bottom: 1px solid $blue-lt;
 }
 
 .grid-bg {
@@ -148,7 +148,7 @@ body {
     padding-bottom: 0.15em;
     border-bottom: 1px solid #fff;
     margin-bottom: 1.25em;
-    color: #000;
+    color: $blue-black;
     font-family: 'mauritius';
     font-size: 28px;
 }
@@ -164,35 +164,52 @@ HEADER
 /*
 ========================================================================== */
 
+div#white-gradient {
+  height: 20px;
+  width: 100%;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(1%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 1%, rgba(255,255,255,0) 100%);
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 900;
+    height: 20px;
+}
+
+.top-link {
+    z-index: 901;
+}
+
+.nav-inner {
+    z-index: 902;
+}
+
+button.navbutton {
+    z-index: 905;
+}
+
+.logo {
+    z-index: 905;
+}
 
 .brand {
 min-width: 40%;
 }
 
-#masthead {
-display: flex;
-flex-wrap: wrap;
-z-index: 200;
-
-a {
-text-decoration: none;
-}
-}
-
-a.brand.name {
-    padding-left: 0px;
-}
 
 
-/* Add a black background color to the top navigation */
+
+/* Add a blue-black background color to the top navigation */
 .topnav {
     overflow: hidden;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
     margin-top: 10px;
-    margin-bottom: 20px;
 
     div {
       width: auto;
@@ -203,6 +220,27 @@ a.brand.name {
     font-size: 1em;
     margin: 0px 0px 2px 0px;
 }
+}
+
+.topnav-main {
+  background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 72%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(72%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 72%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 72%, rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 72%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 72%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+.topnav-main {
+    display: flex;
+    width: 100%!important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topnav {
+    margin: 10px 0px 0px;
 }
 
 /* Style the links inside the navigation bar */
@@ -219,7 +257,7 @@ a.brand.name {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    color: black;
+    color: blue-black;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -245,7 +283,7 @@ a.brand.name {
 
 
 nav li a {
-color: #000;
+color: $blue-black;
 font-family: 'acumin-pro', sans-serif;
 font-size: 1em;
 letter-spacing: 0;
@@ -289,20 +327,22 @@ a.brand.name {
 
 button {
     font-family: 'mauritius';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    background: #fff;
 }
 
-button, .navbutton {
+.navbutton {
     font-family: "mauritius";
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 14px;
-    padding: 5px 30px;
-    background: #fff;
-    border: 1px solid #000;
+    padding-left: 20px;
+    right: 0;
 }
-
 button:hover, .navbutton:hover {
-    background: #000;
+    background: $blue-black;
     color: #fff;
 }
 
@@ -311,8 +351,8 @@ a:focus, button:focus {
 }
 
 .title h1 {
-    font-family: "acumin-pro";
-    font-weight: 300;
+    font-family: "mauritius";
+    font-weight: 500;
 }
 
 h1.logo {
@@ -327,11 +367,11 @@ a.brand.name {}
 
 
 .topnav .in-view a, .topnav .in-view h4 {
-    color: black !important;
+    color: blue-black !important;
 }
 
 .topnav .in-view a:hover {
-    color: gold !important;
+    color: $green-dk !important;
 }
 
 
@@ -373,7 +413,7 @@ COMPONENTS
 font-family: 'mauritius', serif;
 position: relative;
   margin-top: 0px;
-  color: $gray-md;
+  color: $blue-dk;
   text-shadow: none;
   margin-left: 5px;
 }
@@ -529,11 +569,11 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
 }
 
 .light-gray {
-  background: $gray-lt;
+  background: $blue-lt;
 }
 
 #capabilities ul {
-  color: black;
+  color: blue-black;
   margin-right: 0px;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -607,9 +647,7 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
 
 }
 
-.th-grid li img:hover {
-    mix-blend-mode: screen;
-}
+
 
 .th-grid ul {
     width: 100%;
@@ -626,10 +664,6 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
 
 .th-grid li {
     height: 370px;
-}
-
-.th-grid a:hover {
-    mix-blend-mode: screen;
 }
 
 
@@ -701,13 +735,7 @@ p {
     margin: 0px auto;
   }
 
-    h1 {
-font-family: 'mauritius', serif;        font-weight: 400;
-    }
 
-    h3 {
-font-family: 'mauritius', serif;        margin-top: 20px;
-    }
 
     h5 {font-family: 'mauritius', serif;letter-spacing: 0px;text-transform: uppercase;}
 
@@ -715,7 +743,7 @@ font-family: 'mauritius', serif;        margin-top: 20px;
 
 
     a {
-        color: $gray-lt;
+        color: $blue-lt;
     }
 
     a:hover {
@@ -760,7 +788,7 @@ font-family: 'mauritius', serif;        margin-top: 20px;
     z-index: 100;
     background: white;
     padding: 15px 25px;
-font-family: 'mauritius', serif;    color: #000;
+font-family: 'mauritius', serif;    color: $blue-black;
     font-size: 0.65em;
 }
 
@@ -798,7 +826,7 @@ font-style: normal;
 font-weight: 300;
 font-size: 17px;
 letter-spacing: -0.05px;
-color: #000;
+color: $blue-black;
 line-height: 1.35;
 -webkit-font-smoothing: antialiased;
 }
@@ -806,6 +834,7 @@ line-height: 1.35;
 em {
     font-family: 'mauritius';
     font-weight: 400;
+    font-style: italic;
 }
 
 html {
@@ -828,28 +857,41 @@ font-size: 0.9em;
 }
 
 h1, h2, h3, h4, h5 {
-font-weight: 400;
+font-weight: 100;
 margin: 0px;
 -webkit-font-smoothing: auto;
+letter-spacing: 0px;
+line-height: 1.3;
 }
 
 h1 {
-font-family: 'mauritius', serif;
+font-family: 'acumin-pro', sans-serif;
 font-size: 2.5em;
 }
 
 h2 {
 font-size: 1.75em;
-font-family: 'mauritius', serif;
+font-family: 'acumin-pro', sans-serif;
 }
 
 h3 {
 font-size: 1.5em;
+font-family: 'acumin-pro', sans-serif;
 }
 
 h4 {
 font-size: 1.35em;
 font-family: 'mauritius', serif;
+}
+h4 {
+    margin-top: 1.3em;
+    color: black;
+}
+
+a {
+    color: black;
+    font-weight: 500;
+    letter-spacing: -0.1px;
 }
 
 h5 {
@@ -866,7 +908,6 @@ h6 {
 }
 
 a {
-color: #AFAFAF;
 text-decoration: none;
 cursor: pointer;
 -webkit-transition: color .3s;
@@ -875,6 +916,9 @@ font-weight: 300;
 letter-spacing: 0px;
 }
 
+a:hover {
+  color: $blue-lt;
+}
 
 
 ul {
@@ -973,7 +1017,7 @@ line-height: 5;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-color: $gray-dk;
+color: $blue-black;
 
 h1 {
 font-size: 1.25em;
@@ -1080,9 +1124,6 @@ img {
 width: 100%;
 }
 
-img:hover {
-mix-blend-mode: screen;
-}
 }
 
 
@@ -1109,15 +1150,8 @@ width: 100%;
 }
 }
 
-.portfolio-content {
--webkit-transition: opacity 2s;
-transition: opacity 2s;
--webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-}
-
 a.work-teaser {
-color: $gray-md;
+color: $blue-lt;
 }
 
 
@@ -1152,7 +1186,7 @@ margin: 70px auto;
 }
 
 a.work-teaser {
-color: black;
+color: blue-black;
 }
 
 .portfolio-intro {
@@ -1212,7 +1246,7 @@ display: block;
 width: 50%;
 float: left;
 margin: 1em 0;
-color: #000;
+color: $blue-black;
 }
 
 div#content {
@@ -1223,14 +1257,14 @@ font-size: 0.75em;
 a.prev {
 padding: 3em;
 color: #fff;
-background: #000;
+background: $blue-black;
 }
 
 a.next {
 padding: 3em;
 margin-left: -1px;
 color: #fff;
-background: #000;
+background: $blue-black;
 }
 
 a.prev:hover {
@@ -1316,20 +1350,7 @@ h2.portfolio-link {
 }
 
 
-.portfolio-tile {
-    height: 280px;
-    width: 100%;
-    display: block;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    background-size: cover;
-    background-blend-mode: normal;
-    background-color: rgba(12,127,83,0.8);
-}
 
-.portfolio-tile:hover {
-      background-blend-mode: exclusion;
-}
 
 
 /* ==========================================================================
@@ -1340,7 +1361,7 @@ LINKS
 
 a.button {
     color: #fff;
-    background: #000;
+    background: $blue-black;
     padding: 30px;
     margin: 30px 0px;
     font-size: 1rem;
@@ -1368,7 +1389,7 @@ width: 75%;
 .sidebar {
 width: 25%;
 padding: 1em;
-border-left: 1px solid $gray-md;
+border-left: 1px solid $blue-lt;
 }
 
 @media only screen and (max-width:960px) {
@@ -1377,7 +1398,7 @@ width: 100%;
 }
 .sidebar {
 width: 100%;
-border-top: 1px solid $gray-md;
+border-top: 1px solid $blue-lt;
 border-left: 0px;
 }
 }
@@ -1405,7 +1426,7 @@ article.blog--list {
 }
 
 .blog--meta {
-    border-top: 1px solid #000;
+    border-top: 1px solid $blue-black;
     padding: 10px 15px;
 }
 
@@ -1444,12 +1465,12 @@ p.post-excerpt {
 a.post-more {
 font-family: 'mauritius', serif;  font-size: 0.75em;
   text-transform: uppercase;
-  color: #000;
+  color: $blue-black;
   float: right;
 }
 
 a.post-more:hover {
-  color: #000;
+  color: $blue-black;
 }
 
 
@@ -1508,23 +1529,23 @@ ul {
     text-align: right;
 }
 .navbg .logo a.name {
-    color: #000;
+    color: $blue-black;
     font-size: 3.5em;
 }
 ul li a {
-    color: #000;
+    color: $blue-black;
 }
 .logo a.name {
-    color: #000;
+    color: $blue-black;
     font-size: 3.5em;
 }
 h4 {
-    color: #000;
+    color: $blue-black;
     font-weight: 400;
     margin-bottom: 1.5em;
 }
 a {
-    color: #000;
+    color: $blue-black;
 }
 nav a:hover {
     color: gold !important;
@@ -1536,12 +1557,6 @@ nav a:hover {
 
 
 
-
-
-.navbutton,
-figcaption {
-  font-family: 'inherit';
-}
 
 
 .navbg {
@@ -1567,12 +1582,11 @@ figcaption {
 
 
 nav.in-view {
-    top: 53px;
-    left: 50px;
+    top: 131px;
+    left: 159px;
     right: 0px;
     bottom: 55px;
 }
-
 h1.logo {
     font-size: 12px;
     bottom: 40px;
@@ -1628,42 +1642,28 @@ nav .nav-column {
     background: #AD0028;
 }
 
-.home a, .home p, .home body, .home h1, .home h2, .home h3, .home h4, .home h5, .home h6 {
-  color: #D8033A;
-}
-
-.home a {
-  color: #F7064B;
-}
 
 .home a.name {
-  color: #000;
+  color: $blue-black;
 }
 
 @media only screen and (max-width:640px)  {
 a.name-mobile {font-family: 'acumin-pro';font-size: 1.25rem;color: #fff;}
 }
 
-.home a.button {
-    color: #fff;
-    background: #F7064B;
-    padding: 30px;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
 
 
 
 .title h1 {
     line-height: 1.35em;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    letter-spacing: -0.75px;
-    color: #000;
-    font-family: "acumin-pro";
-    font-weight: 100;
+    color: $blue-black;
+    font-family: "mauritius";
     -webkit-font-smoothing: auto;
     width: 65%;
+    margin-top: 1.35em;
+    margin-bottom: 0.5em;
+    font-weight: 100;
+    letter-spacing: 0px;
 }
 
 .title a {
@@ -1691,7 +1691,7 @@ a.name-mobile {font-family: 'acumin-pro';font-size: 1.25rem;color: #fff;}
 
 
 .about body, .about p {
-  color: #000;
+  color: $blue-black;
 }
 
 .about a, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6, {
@@ -1700,7 +1700,7 @@ color: #0DBC71;
 
 
 .about a.name {
-  color: #000;
+  color: $blue-black;
 }
 
 .about a.button {
@@ -1709,7 +1709,7 @@ color: #0DBC71;
 }
 
 .about a.button:hover {
-  background-color: #000;
+  background-color: $blue-black;
   color: #fff;
 }
 
@@ -1775,10 +1775,6 @@ svg {
 
 
 
-p.work-title {
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
 
 
 .work-title {
@@ -1794,15 +1790,36 @@ p.work-title {
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 
-.work-title a {
-  color: #000;
+
+.portfolio-tile {
+    height: 280px;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-size: cover;
+    background-blend-mode: normal;
+    background-color: rgba(12,127,83,0.8);
 }
 
-.th-grid li:hover .work-title {
+.portfolio-tile:hover {
+      mix-blend-mode: exclusion;
+}
+
+.work-title {
     opacity: 1;
+font-size: 2.5em;
+text-shadow: none;
+background: transparent;
+padding: 0px;
+line-height: 1.2;
+color: yellow;
+font-family: 'mauritius';
+letter-spacing: 0px;
+padding: 0px 20px;
+font-weight: 600;
+mix-blend-mode: exclusion;
 }
-
-
 
 .th-grid img {
     position: relative;
@@ -1817,7 +1834,7 @@ li {
 
 
 .work p, .work body {
-    color: #000;
+    color: $blue-black;
 }
 
 .work a, .work h1, .work h2, .work h3, .work h4, .work h5, .work h6, {
@@ -1825,12 +1842,12 @@ color: #6C7EFF;
 }
 
 .work a.name {
-  color: #000;
+  color: $blue-black;
 }
 
 
 .default a.name {
-  color: #000;
+  color: $blue-black;
 }
 
 
@@ -1840,12 +1857,12 @@ color: #773DE8;
 }
 
 .planner a.name {
-  color: #000;
+  color: $blue-black;
 }
 
 .default {
   background: #fff;
-  color: #000;
+  color: $blue-black;
 }
 
 
@@ -1867,10 +1884,6 @@ li {
     margin: 0px 0px 4px 0px;
 }
 
-p.work-title {
-    font-weight: 400;
-    letter-spacing: -0.5px;
-}
 
 a.button {
     font-weight: 500;
@@ -1907,17 +1920,18 @@ a.brand.name {
     font-size: 2.75em;
 }
 
-.top-link {
-    display: none;
-}
 
 .title h1 {
-    font-size: 1.85em;
+    font-size: 2.3em;
     width: 100%;
 }
 
+h3 {
+  font-size: 1.2em;
+}
+
 div#page {
-    border-top: 4px solid #000;
+    border-top: 4px solid $blue-black;
 }
 
 
@@ -1945,21 +1959,25 @@ div#page {
     flex-wrap: wrap;
 }
 
-p.work-title {
-    opacity: 1;
-    font-size: 1.5em;
-    margin: 0;
-    color: #fff;
-    text-shadow: 0px 1px 1px #000;
-    background: #000;
-    padding: 0px;
-    line-height: 0.95;
-}
+    p.work-title {
+        font-size: 1.75em;
+        opacity: 1;
+        font-size: 2.5em;
+        margin: 0;
+        color: #fff;
+        text-shadow: none;
+        background: transparent;
+        padding: 0px;
+        line-height: 1.2;
+        color: yellow;
+        font-family: 'mauritius';
+        letter-spacing: 0px;
+        padding: 0px 20px;
+        font-weight: 600;
+        mix-blend-mode: difference;
+    }
 
-.work-title {
-    left: 0px;
-    top: 27px;
-}
+
 
 .right-button {
     text-align: left;
@@ -1984,4 +2002,94 @@ h1.logo {
     right: 20px;
     font-size: 8px;
 }
+}
+
+
+
+
+
+
+
+
+
+h1.logo a {
+    letter-spacing: 30px;
+}
+
+a.brand.name {
+    letter-spacing: 16px;
+}
+
+
+
+.top-link {
+    font-family: uppercase;
+}
+
+.top-link a {
+    text-transform: uppercase;
+    font-size: 0.25em!important;
+}
+
+.topnav h4 {
+    font-size: 14px;
+    vertical-align: baseline;
+    letter-spacing: 1px;
+    padding-top: 3px;
+}
+
+div#page {
+    border-top: 7px solid $green-lt;
+}
+
+
+nav a.brand.name {
+    letter-spacing: 0.25px;
+}
+
+
+button, button.navbutton {
+    -webkit-appearance: none;
+    border: 0px;
+    font-size: 1.25em;
+    letter-spacing: -.1px;
+    text-transform: none;
+    font-weight: 500;
+}
+
+button:hover, .navbutton:hover {
+    background: #fff;
+    color: red;
+    /* border-bottom: 2px solid green; */
+    /* padding: 2px; */
+}
+
+
+#site-footer h2 {
+    font-family: 'mauritius';
+    font-weight: 100;
+    letter-spacing: 0px;
+}
+
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    /* width: 50%; */
+    box-shadow: none;
+    float: left;
+    padding: 0px;
+    height: 538px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    padding-right: 30px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }

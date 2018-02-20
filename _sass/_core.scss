@@ -1,0 +1,148 @@
+/* ==========================================================================
+TEXT
+========================================================================== */
+/*
+========================================================================== */
+body,
+p {
+  font-family: 'acumin-pro', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: -0.05px;
+  color: #000;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+}
+
+em {
+  font-family: 'mauritius';
+  font-weight: 400;
+}
+
+html {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0 10px 0 0;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0 0 8px;
+  font-size: 0.9em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'mauritius', serif;
+  font-weight: 400;
+  margin: 0;
+  -webkit-font-smoothing: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-family: 'mauritius', serif;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-family: 'mauritius', serif;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1.125em;
+  font-family: 'acumin-pro', sans-serif;
+  color: #3a3a38;
+  margin: 0.75em 0 0.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+a {
+  color: #AFAFAF;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+p.detail {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+li {
+  position: relative;
+}
+
+.default {
+  background: #fff;
+  color: #000;
+}
+
+p {
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 1.35;
+}
+
+li {
+  font-size: 1.05em;
+  letter-spacing: 0;
+  margin: 0 0 4px;
+}
+
+i.fa {
+  margin: 10px 5px 10px 0;
+}
+
+.title h1 {
+  line-height: 1.35em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  letter-spacing: -0.75px;
+  color: #000;
+  font-family: "acumin-pro";
+  font-weight: 100;
+  -webkit-font-smoothing: auto;
+  width: 65%;
+}
+
+.title a {
+  font-weight: 200;
+}
+
+.title h1 {
+  font-family: "acumin-pro";
+  font-weight: 300;
+}

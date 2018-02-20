@@ -1,0 +1,255 @@
+
+@media only screen and (max-width:480px) {
+  a.brand.name {
+    font-size: 2.75em;
+  }
+
+  .top-link {
+    display: none;
+  }
+
+  .title h1 {
+    font-size: 1.85em;
+    width: 100%;
+  }
+
+  div#page {
+    border-top: 4px solid #000;
+  }
+
+  .title {
+    margin-top: 4em;
+  }
+
+  .grid-bg {
+    margin: 0 -1em;
+    padding: 1em;
+  }
+
+  .th-grid li {
+    max-width: 460px;
+    height: 34vh;
+    margin-bottom: 10px;
+  }
+
+  .th-grid a {
+    width: 100%;
+  }
+
+  .th-grid ul {
+    flex-wrap: wrap;
+  }
+
+  p.work-title {
+    opacity: 1;
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    background: #000;
+    padding: 0;
+    line-height: 0.95;
+  }
+
+  .work-title {
+    left: 0;
+    top: 27px;
+  }
+
+}
+
+
+
+
+
+@media only screen and (min-width:960px) {
+  #page,
+  #site-footer,
+  .page-white {
+    padding: 0 3.4375rem;
+  }
+}
+@media only screen and (max-width:640px) {
+  #page {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .one-third {
+    width: 30%;
+  }
+
+  .two-thirds {
+    width: 65%;
+  }
+
+  .one-half {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .grid-bg {
+    padding: 1em 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .topnav .logo {
+    width: 100%;
+    display: block;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topnav .hide {
+    display: none;
+  }
+}
+@media only screen and (min-width:640px) {
+  .staff-item {
+    width: 49%;
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width:960px) {
+  .staff-item {
+    width: 19%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .clients li {
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width:640px) {
+  .mid {
+    margin-top: -3em;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .services-item {
+    width: 100%;
+    margin: 2em auto;
+  }
+
+  .services {
+    font-size: 1.2rem;
+    padding: 2em 0;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .th-grid li {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .th-grid {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width:640px) {
+  #right-button {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  #page {
+    padding: 1em;
+  }
+
+  .footer-top {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .footer-bottom {
+    display: block;
+  }
+
+  .footer-top .right,
+  .footer-top li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-bottom .right,
+  .footer-bottom li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    margin: 30px auto;
+  }
+
+  #site-footer {
+    text-align: center;
+  }
+}
+@media only screen and (max-width:640px) {
+  #hrmg {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width:640px) {
+  .portfolio-grid article {
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width:960px) {
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-left: 0;
+  }
+}
+@media only screen and (max-width:960px) {
+  .content-inner {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blog--main {
+    width: 100%;
+    margin-top: 2em;
+    padding: 0 1em 2em;
+  }
+
+  .blog--inner {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width:640px) {
+  a.name-mobile {
+    font-family: 'acumin-pro';
+    font-size: 1.25rem;
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .title h1 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin-top: 1em;
+  }
+}
