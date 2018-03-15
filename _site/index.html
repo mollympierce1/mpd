@@ -28,7 +28,7 @@
 
   <link href="http://localhost:4000/atom.xml" type="application/atom+xml" rel="alternate" title="Molly Pierce - Graphic & Web Designer Atom Feed">
   <link href="http://localhost:4000/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
-  <script src="http://localhost:4000/js/vendor/jquery-1.9.1.min.js"></script>
+  <script src="http://localhost:4000/js/vendor/jquery-3.3.1.min.js"></script>
   <script src="http://localhost:4000/js/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Eczar:400,600,800|Work+Sans:300,400,500,600,700" rel="stylesheet">
   <script src="https://use.typekit.net/lye5jyf.js"></script>
@@ -47,6 +47,18 @@
   ga('send', 'pageview');
 
 </script>
+<script src="https://unpkg.com/jquery-aniview@1.0.1/dist/jquery.aniview.js"
+integrity="sha384-zDA6q/t525x7f6KD/OaOe24vCxSPU3eraILc2NU+ZA7ISsc3ExQbj8PB56FRMq6H"
+crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+  var options = {
+      animateThreshold: 100,
+      scrollPollInterval: 20
+  }
+  $('.aniview').AniView(options);
+});
+</script>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,6 +75,18 @@
 
 </head>
 
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+</script>
 
 <body id="js-body" class="home">
     <!--[if lt IE 9]><div class="upgrade notice-warning"><strong>Your browser is quite old!</strong> Why not <a href="http://whatbrowser.org/">upgrade to a newer one</a> to better enjoy this site?</div><![endif]-->
@@ -105,7 +129,6 @@
   <h1 class="logo"><a class="brand name" role="heading" href="http://localhost:4000/">Molly Pierce Design</a></h1>
 </nav>
 </header>
-<div id="white-gradient"></div>
 
 
 
@@ -152,38 +175,48 @@ $('.navbg').click(function() {
           <img class="" src="images/MPD-best-photo.jpg"></img>
         </div>
         <div class="flex flex-wrap">
-          <div id="slideshow" class="one-half">
-       <div>
-         <img src="/images/mpd-amst-booklet-5.png">
-       </div>
-       <div>
-         <img src="/images/mpd-poster-ccso-violins.png">
-       </div>
-       <div>
-         <img src="/images/mpd-poster-executive-surf-club2.png">
-       </div>
-    </div>
-    <script>
-    $("#slideshow > div:gt(0)").hide();
-
-    setInterval(function() {
-      $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
-    },  5000);
-    </script>
-        <div class="one-half">
-          <div class="title">
-            <h1>Design worth <em>celebrating!</em></h1>
+          <div class="one-half">
+            <img src="/images/mpd-amst-booklet-5.png">
+            </div>
+          <div class="one-half" class="feature">
+            <div class="feature">
+              <h2>Graphic Design</h2>
+              <h4>Stationery, Booklets & Brochures, Promotional Materials, Events & Parties</h3>
+              <a class="button" href="http://localhost:4000/services.html">Graphic Design Services</a>
+            </div>
           </div>
-          <h3>I work with businesses, cultural institutions, hosts and hostesses to strengthen much-loved brands, promote fabulous events, and design stunning promotional pieces. Designing is the fun part! Make sure you enjoy it.</h3>
-          <h4><a href="http://localhost:4000/services">Learn more about my design services.</a></h4>
         </div>
-    </div>
-  </div>
+        <div class="flex flex-wrap ">
+          <div class="one-half">
+            <img src="/images/gill-website-1.jpg">
+            </div>
+          <div class="one-half feature">
+            <h2>Website Design</h2>
+            <h4>Blogs, Small Businesses, Events</h4>
+            <a class="button" href="http://localhost:4000/services.html">Website Design Services</a>
+          </div>
+
+        </div>
+        <div class="flex flex-wrap ">
+          <div class="one-half">
+            <img src="/images/amst-mockup-9.png">            </div>
+          <div class="one-half feature">
+            <h2>Branding & Identity</h2>
+            <h4>Logo Design, Brand Design, Creative Direction</h4>
+            <a class="button" href="http://localhost:4000/services.html">Branding & Identity Services</a>
+          </div>
+        </div>
+        <!--<div class="flex flex-wrap">
+          <div class="one-half"></div>
+          <div id="slideshow" class="one-half">
+            <div><img src="/images/mpd-photo-7.jpg"></div>
+            <div><img src="/images/mpd-ccso-poster-series.png"></div>
+            <div><img src="/images/mpd-poster-executive-surf-club2.png"></div>
+            <div><img src="/images/mpd-ccso-poster-series.png"></div>
+
+          </div>
+        </div> -->
+</div>
 </div>
   <footer role="contentinfo" id="site-footer" class="footer-container">
 	<ul class="footer-top">

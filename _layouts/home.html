@@ -2,6 +2,18 @@
 <html>
 
 {% include head.html %}
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+</script>
 
 <body id="js-body" class="home">
     {% include browser-upgrade.html %}
@@ -12,38 +24,48 @@
           <img class="" src="images/MPD-best-photo.jpg"></img>
         </div>
         <div class="flex flex-wrap">
-          <div id="slideshow" class="one-half">
-       <div>
-         <img src="/images/mpd-amst-booklet-5.png">
-       </div>
-       <div>
-         <img src="/images/mpd-poster-ccso-violins.png">
-       </div>
-       <div>
-         <img src="/images/mpd-poster-executive-surf-club2.png">
-       </div>
-    </div>
-    <script>
-    $("#slideshow > div:gt(0)").hide();
-
-    setInterval(function() {
-      $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
-    },  5000);
-    </script>
-        <div class="one-half">
-          <div class="title">
-            <h1>Design worth <em>celebrating!</em></h1>
+          <div class="one-half">
+            <img src="/images/mpd-amst-booklet-5.png">
+            </div>
+          <div class="one-half" class="feature">
+            <div class="feature">
+              <h2>Graphic Design</h2>
+              <h4>Stationery, Booklets & Brochures, Promotional Materials, Events & Parties</h3>
+              <a class="button" href="{{ site.url }}/services.html">Graphic Design Services</a>
+            </div>
           </div>
-          <h3>I work with businesses, cultural institutions, hosts and hostesses to strengthen much-loved brands, promote fabulous events, and design stunning promotional pieces. Designing is the fun part! Make sure you enjoy it.</h3>
-          <h4><a href="{{ site.url }}/services">Learn more about my design services.</a></h4>
         </div>
-    </div>
-  </div>
+        <div class="flex flex-wrap ">
+          <div class="one-half">
+            <img src="/images/gill-website-1.jpg">
+            </div>
+          <div class="one-half feature">
+            <h2>Website Design</h2>
+            <h4>Blogs, Small Businesses, Events</h4>
+            <a class="button" href="{{ site.url }}/services.html">Website Design Services</a>
+          </div>
+
+        </div>
+        <div class="flex flex-wrap ">
+          <div class="one-half">
+            <img src="/images/amst-mockup-9.png">            </div>
+          <div class="one-half feature">
+            <h2>Branding & Identity</h2>
+            <h4>Logo Design, Brand Design, Creative Direction</h4>
+            <a class="button" href="{{ site.url }}/services.html">Branding & Identity Services</a>
+          </div>
+        </div>
+        <!--<div class="flex flex-wrap">
+          <div class="one-half"></div>
+          <div id="slideshow" class="one-half">
+            <div><img src="/images/mpd-photo-7.jpg"></div>
+            <div><img src="/images/mpd-ccso-poster-series.png"></div>
+            <div><img src="/images/mpd-poster-executive-surf-club2.png"></div>
+            <div><img src="/images/mpd-ccso-poster-series.png"></div>
+
+          </div>
+        </div> -->
+</div>
 </div>
   {% include footer.html %}
   </body>

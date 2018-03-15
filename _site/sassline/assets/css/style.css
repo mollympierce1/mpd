@@ -37,9 +37,9 @@ caption, th, td {
   vertical-align: middle; }
 
 html {
-  font-size: 75%;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  font-size: 75%; }
   @media screen and (min-width: 40em) {
     html {
       font-size: 87.5%; } }
@@ -54,11 +54,11 @@ html {
       font-size: 118.75%; } }
 
 body {
-  font-size: 1.33333rem;
-  font-family: Acumin-Pro, sans-serif;
+  font-family: Georgia, serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-size: 1.33333rem; }
   @media screen and (min-width: 40em) {
     body {
       font-size: 1.21429rem; } }
@@ -73,27 +73,28 @@ body {
       font-size: 1.15789rem; } }
 
 a {
-  color: #6C7EFF;
+  color: #0E58F5;
   text-decoration: none;
   transition: color .1s, background-color .1s; }
   a:hover, a:active, a:focus {
-    color: #0DBC71;
+    color: #0B348B;
     text-decoration: none; }
 
 .typeset p a, .typeset li a {
-  background-image: linear-gradient(to bottom, transparent 50%, #d2d8ff 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #709cf9 50%);
   background-position: 0 93%;
   background-repeat: repeat-x;
   background-size: 100% 0.15rem;
   text-shadow: 0.1rem 0 #FCFCFC, 0.15rem 0 #FCFCFC, -0.1rem 0 #FCFCFC, -0.15rem 0 #FCFCFC; }
   .typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
-    background-image: linear-gradient(to bottom, transparent 50%, #3df2a4 50%); }
+    background-image: linear-gradient(to bottom, transparent 50%, #1257ea 50%); }
 
 .typeset p {
+  -webkit-font-feature-settings: 'kern', 'onum', 'liga';
+          font-feature-settings: 'kern', 'onum', 'liga';
   line-height: 2rem;
   margin-bottom: 1.43999rem;
-  padding-top: 0.56001rem;
-  font-feature-settings: 'kern', 'onum', 'liga'; }
+  padding-top: 0.56001rem; }
   @media screen and (min-width: 40em) {
     .typeset p {
       margin-bottom: 1.4007rem;
@@ -112,9 +113,10 @@ a {
       padding-top: 0.6179rem; } }
 
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-  color: #000;
-  font-family: Mauritius, serif;
-  font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
+  color: #2E2E2E;
+  font-family: Helvetica, sans-serif;
+  -webkit-font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
+          font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
   font-style: normal;
   font-weight: 700; }
 
@@ -295,7 +297,8 @@ a {
       margin-bottom: 1.3821rem;
       padding-top: 0.6179rem; } }
   .typeset ul li, .typeset ol li {
-    font-feature-settings: 'kern', 'onum', 'liga';
+    -webkit-font-feature-settings: 'kern', 'onum', 'liga';
+            font-feature-settings: 'kern', 'onum', 'liga';
     margin-left: 2rem; }
     @media screen and (min-width: 40em) {
       .typeset ul li, .typeset ol li {
@@ -311,7 +314,8 @@ a {
     counter-increment: top-level; }
     .typeset ol li:before {
       content: counter(top-level) ".";
-      font-feature-settings: 'lnum', 'tnum';
+      -webkit-font-feature-settings: 'lnum', 'tnum';
+              font-feature-settings: 'lnum', 'tnum';
       margin-left: -3rem;
       position: absolute;
       text-align: right;
@@ -354,7 +358,8 @@ a {
       margin-bottom: 1.3821rem;
       padding-top: 0.6179rem; } }
   .typeset dl dt, .typeset dl dd {
-    font-feature-settings: 'kern', 'onum', 'liga';
+    -webkit-font-feature-settings: 'kern', 'onum', 'liga';
+            font-feature-settings: 'kern', 'onum', 'liga';
     margin-left: 2rem; }
     @media screen and (min-width: 40em) {
       .typeset dl dt, .typeset dl dd {
@@ -365,15 +370,16 @@ a {
     padding-top: 1rem; }
 
 .typeset table {
+  font-family: Helvetica, sans-serif;
+  -webkit-font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
+          font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
   line-height: 2rem;
   font-size: 1.19167rem;
   margin-bottom: -0.60676rem;
-  padding-top: 0.60676rem;
-  font-family: Mauritius, serif;
-  font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
-  font-style: normal;
-  font-weight: 400;
-  width: 100%; }
+  padding-top: 0.60676rem; }
   @media screen and (min-width: 40em) {
     .typeset table {
       font-size: 1.09286rem;
@@ -428,10 +434,10 @@ a {
   font-style: italic; }
 
 .typeset small, .typeset .caption {
-  font-size: 1.06667rem;
-  font-family: Mauritius, serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 1.06667rem; }
   @media screen and (min-width: 40em) {
     .typeset small, .typeset .caption {
       font-size: 0.97143rem; } }
@@ -449,10 +455,10 @@ a {
   line-height: 1rem; }
 
 .typeset .caption {
+  color: #BDC8CC;
   line-height: 2rem;
   margin-bottom: 1.35199rem;
-  padding-top: 0.64801rem;
-  color: #BDC8CC; }
+  padding-top: 0.64801rem; }
   @media screen and (min-width: 40em) {
     .typeset .caption {
       margin-bottom: 1.32056rem;
@@ -477,7 +483,7 @@ a {
   margin-top: 0rem; }
 
 .typeset blockquote p {
-  border-left: 0.15rem solid #6C7EFF;
+  border-left: 0.15rem solid #0E58F5;
   font-style: italic;
   padding-left: 1rem;
   margin-bottom: 1.87999rem;
@@ -527,8 +533,8 @@ a {
   word-wrap: break-word; }
 
 .typeset code {
-  font-size: 1.06667rem;
-  line-height: 1rem; }
+  line-height: 1rem;
+  font-size: 1.06667rem; }
   @media screen and (min-width: 40em) {
     .typeset code {
       font-size: 0.97143rem; } }
@@ -549,16 +555,19 @@ a {
   text-transform: uppercase; }
 
 .typeset .small-caps {
-  font-feature-settings: 'smcp', 'kern';
+  -webkit-font-feature-settings: 'smcp', 'kern';
+          font-feature-settings: 'smcp', 'kern';
   -webkit-font-kerning: normal;
           font-kerning: normal;
   letter-spacing: 0.1rem; }
 
 .typeset .lining-numerals {
-  font-feature-settings: 'lnum', 'kern'; }
+  -webkit-font-feature-settings: 'lnum', 'kern';
+          font-feature-settings: 'lnum', 'kern'; }
 
 .typeset .oldstyle-numerals {
-  font-feature-settings: 'onum', 'kern'; }
+  -webkit-font-feature-settings: 'onum', 'kern';
+          font-feature-settings: 'onum', 'kern'; }
 
 .section {
   margin: 0 auto;
@@ -577,8 +586,8 @@ a {
       max-width: 68.42105rem; } }
 
 .single-measure {
-  max-width: 41.66667rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 41.66667rem; }
   @media screen and (min-width: 40em) {
     .single-measure {
       max-width: 39.28571rem; } }
@@ -593,14 +602,14 @@ a {
       max-width: 39.47368rem; } }
 
 .column {
-  max-width: 41.66667rem;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  max-width: 41.66667rem; }
   @media screen and (min-width: 40em) {
     .column {
       float: left;
-      margin: initial;
-      max-width: initial;
+      margin: inherit;
+      max-width: auto;
       padding-left: 1rem;
       padding-right: 1rem; } }
   @media screen and (min-width: 64em) {
@@ -611,18 +620,18 @@ a {
 @media screen and (min-width: 40em) {
   .column--duo {
     width: 50%; }
-    .column--duo:nth-of-type(2n+3) {
+    .column--duo:nth-child(3n) {
       clear: left; }
-    .column--duo:nth-of-type(n+3) {
-      margin-top: 3rem; } }
+    .column--duo:nth-child(n+3) {
+      margin-top: 2rem; } }
 
 @media screen and (min-width: 40em) {
   .column--trio {
     width: 33.333%; }
-    .column--trio:nth-of-type(3n+4) {
+    .column--trio:nth-child(4n) {
       clear: left; }
-    .column--trio:nth-of-type(n+4) {
-      margin-top: 3rem; } }
+    .column--trio:nth-child(n+4) {
+      margin-top: 2rem; } }
 
 @media screen and (min-width: 40em) {
   .column--quad {
@@ -650,8 +659,8 @@ a {
 
 @media screen and (min-width: 40em) {
   .column--sidebar {
-    max-width: 35%;
-    padding-right: 2rem; } }
+    padding-right: 2rem;
+    max-width: 35%; } }
 
 @media screen and (min-width: 50em) {
   .column--sidebar {
@@ -659,8 +668,8 @@ a {
 
 @media screen and (min-width: 64em) {
   .column--sidebar {
-    max-width: 35%;
-    padding-right: 4rem; } }
+    padding-right: 4rem;
+    max-width: 35%; } }
 
 @media screen and (min-width: 100em) {
   .column--sidebar {
@@ -724,11 +733,11 @@ a {
 
 @media screen and (min-width: 40em) {
   .column--right .sidenote {
-    max-width: 35%;
     left: 0;
     padding-left: 1rem;
     padding-right: 2rem;
-    position: absolute; } }
+    position: absolute;
+    max-width: 35%; } }
 
 @media screen and (min-width: 50em) {
   .column--right .sidenote {
@@ -736,13 +745,13 @@ a {
 
 @media screen and (min-width: 64em) {
   .column--right .sidenote {
-    max-width: 35%;
-    padding-right: 4rem; } }
+    padding-right: 4rem;
+    max-width: 35%; } }
 
 @media screen and (min-width: 100em) {
   .column--right .sidenote {
-    max-width: 36.46154%;
-    padding-left: 2rem; } }
+    padding-left: 2rem;
+    max-width: 36.46154%; } }
 
 @media screen and (min-width: 40em) {
   .column--left {
@@ -762,11 +771,11 @@ a {
 
 @media screen and (min-width: 40em) {
   .column--left .sidenote {
-    max-width: 35%;
-    left: 65%;
     padding-left: 2rem;
     padding-right: 1rem;
-    position: absolute; } }
+    position: absolute;
+    max-width: 35%;
+    left: 65%; } }
 
 @media screen and (min-width: 50em) {
   .column--left .sidenote {
@@ -775,15 +784,15 @@ a {
 
 @media screen and (min-width: 64em) {
   .column--left .sidenote {
+    padding-left: 4rem;
     max-width: 35%;
-    left: 65%;
-    padding-left: 4rem; } }
+    left: 65%; } }
 
 @media screen and (min-width: 100em) {
   .column--left .sidenote {
+    padding-right: 2rem;
     max-width: 36.46154%;
-    left: 63.53846%;
-    padding-right: 2rem; } }
+    left: 63.53846%; } }
 
 body {
   background-color: #FCFCFC;
@@ -864,9 +873,10 @@ img {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
   @media screen and (min-width: 40em) {
     .nav-toggle {
       display: none; } }
@@ -888,32 +898,32 @@ img {
       width: 100%; } }
 
 .main-nav li {
-  font-size: 1.33333rem;
-  font-family: Mauritius, serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 1.33333rem; }
   .main-nav li a, .main-nav li span {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     border-bottom: 0.1rem solid #d9d9d9;
-    color: #6C7EFF;
+    color: #0E58F5;
     cursor: pointer;
     display: block;
     padding: 10px 3%; }
     .main-nav li a:hover, .main-nav li a:active, .main-nav li a:focus, .main-nav li span:hover, .main-nav li span:active, .main-nav li span:focus {
-      background-color: #6C7EFF;
+      background-color: #0E58F5;
       color: #FFFFFF; }
   @media screen and (min-width: 40em) {
     .main-nav li {
-      font-size: 0.85714rem;
       display: inline-block;
       letter-spacing: 0.1rem;
       margin-right: 2rem;
       padding: 1rem 0;
       text-transform: uppercase;
-      width: auto; }
+      width: auto;
+      font-size: 0.85714rem; }
       .main-nav li a, .main-nav li span {
         border: 0;
         color: #BDC8CC;
@@ -921,7 +931,7 @@ img {
         padding: 0; }
         .main-nav li a:hover, .main-nav li a:active, .main-nav li a:focus, .main-nav li span:hover, .main-nav li span:active, .main-nav li span:focus {
           background-color: transparent;
-          color: #6C7EFF; } }
+          color: #0E58F5; } }
   @media screen and (min-width: 50em) {
     .main-nav li {
       font-size: 0.8rem; } }
@@ -983,14 +993,14 @@ img {
       top: 0; }
 
 .global-footer p {
-  font-size: 1.19167rem;
   color: #BDC8CC;
-  font-family: Mauritius, serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   padding: 1rem 0;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.19167rem; }
   @media screen and (min-width: 40em) {
     .global-footer p {
       font-size: 1.09286rem; } }

@@ -17,12 +17,7 @@
   "scripts": {
     "start": "gulp"
   },
-  "keywords": [
-    "sass",
-    "baseline",
-    "boilerplate",
-    "modular-scale"
-  ],
+  "keywords": [ "sass", "baseline", "boilerplate", "modular-scale" ],
   "author": "Jake Giltsoff <hi@jke.me> (http://jke.me)",
-  "license": "MIT"
+  "license" : "MIT"
 }

@@ -51,6 +51,7 @@ body {
   width: 100%;
   z-index: 101;
   position: relative;
+  margin-bottom: 1em;
 }
 
 .inner {
@@ -83,13 +84,11 @@ body {
   flex-wrap: wrap;
 }
 
-.one-third, .two-thirds, .one-half {
-  padding: 1em 0px;
-}
+
 
 .one-third, .two-thirds, .one-half {
   width: 100%;
-  padding: 1em 0px;
+  margin-bottom: 1em;
 }
 
 @media only screen and (min-width:640px) {
@@ -102,7 +101,7 @@ body {
   }
 
   .one-half {
-    width: 49%;
+    width: 50%;
   }
 }
 
@@ -153,6 +152,11 @@ body {
     font-size: 28px;
 }
 
+
+.middle {
+    align-items: center;
+    text-align: center;
+}
 
 
 
@@ -240,7 +244,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .topnav {
-    margin: 10px 0px 0px;
+    margin: 10px 0px 10px
 }
 
 /* Style the links inside the navigation bar */
@@ -681,6 +685,10 @@ font-family: 'mauritius', serif;  text-transform: uppercase;
 
 
 
+.feature {
+    padding: 5em 1.5em 2.5em;
+    min-width: 400px;
+  }
 
 
 
@@ -706,9 +714,7 @@ letter-spacing: 3px;
     color: white;
     margin-bottom: 10px;
   }
-  a.button.white {
-    color: white;
-}
+
 
 p {
   color: white;
@@ -866,28 +872,26 @@ line-height: 1.3;
 
 h1 {
 font-family: 'acumin-pro', sans-serif;
-font-size: 2.5em;
+font-size: 3em;
 }
 
 h2 {
+    font-family: 'mauritius';
+    font-weight: 600;
+    font-size: 2.25em;
+}
+
+h3 {
 font-size: 1.75em;
 font-family: 'acumin-pro', sans-serif;
 }
 
-h3 {
-font-size: 1.5em;
-font-family: 'acumin-pro', sans-serif;
-}
-
 h4 {
-font-size: 1.35em;
-font-family: 'mauritius', serif;
+    font-family: 'acumin pro';
+    margin-top: 1em;
+    line-height: 1.35;
+    font-size: 2.5;
 }
-h4 {
-    margin-top: 1.3em;
-    color: black;
-}
-
 a {
     color: black;
     font-weight: 500;
@@ -949,6 +953,7 @@ padding-bottom: 60px;
 padding-top: 60px;
 font-family: 'mauritius', serif;
 background: #000;
+margin-top: 3em;
 
  p {
    color: #CECECE;
@@ -1359,13 +1364,15 @@ LINKS
 /*
 ========================================================================== */
 
-a.button {
-    color: #fff;
-    background: $blue-black;
-    padding: 30px;
-    margin: 30px 0px;
-    font-size: 1rem;
-    text-transform: uppercase;
+
+.button {
+    margin-top: 2em;
+    padding: 0px;
+    display: table;
+    font-family: 'acumin pro';
+    font-weight: 600;
+    font-size: 1.1em;
+    border-bottom: 1px solid black;
 }
 
 
@@ -1690,28 +1697,8 @@ a.name-mobile {font-family: 'acumin-pro';font-size: 1.25rem;color: #fff;}
 
 
 
-.about body, .about p {
-  color: $blue-black;
-}
-
-.about a, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6, {
-color: #0DBC71;
-}
 
 
-.about a.name {
-  color: $blue-black;
-}
-
-.about a.button {
-  background-color: #0B7F50;
-  color: #fff;
-}
-
-.about a.button:hover {
-  background-color: $blue-black;
-  color: #fff;
-}
 
 p.detail {
     font-size: 12px;
@@ -1885,9 +1872,6 @@ li {
 }
 
 
-a.button {
-    font-weight: 500;
-}
 
 #site-footer a {
     font-family: "acumin-pro";
@@ -1979,14 +1963,7 @@ div#page {
 
 
 
-.right-button {
-    text-align: left;
-    float: left;
-}
 
-#right-button {
-    text-align: left;
-}
 
 #site-footer {
     text-align: left;
@@ -2039,7 +2016,7 @@ a.brand.name {
 }
 
 div#page {
-    border-top: 7px solid $green-lt;
+    border-top: 3px solid $green-lt;
 }
 
 

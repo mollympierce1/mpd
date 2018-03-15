@@ -12,7 +12,7 @@
 
   <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
   <link href="{{ site.url }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
-  <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
+  <script src="{{ site.url }}/js/vendor/jquery-3.3.1.min.js"></script>
   <script src="{{ site.url }}/js/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Eczar:400,600,800|Work+Sans:300,400,500,600,700" rel="stylesheet">
   <script src="https://use.typekit.net/lye5jyf.js"></script>
@@ -30,6 +30,18 @@
   ga('create', 'UA-100941412-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script src="https://unpkg.com/jquery-aniview@1.0.1/dist/jquery.aniview.js"
+integrity="sha384-zDA6q/t525x7f6KD/OaOe24vCxSPU3eraILc2NU+ZA7ISsc3ExQbj8PB56FRMq6H"
+crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+  var options = {
+      animateThreshold: 100,
+      scrollPollInterval: 20
+  }
+  $('.aniview').AniView(options);
+});
 </script>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">

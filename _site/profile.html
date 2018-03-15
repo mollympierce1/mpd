@@ -28,7 +28,7 @@
 
   <link href="http://localhost:4000/atom.xml" type="application/atom+xml" rel="alternate" title="Molly Pierce - Graphic & Web Designer Atom Feed">
   <link href="http://localhost:4000/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
-  <script src="http://localhost:4000/js/vendor/jquery-1.9.1.min.js"></script>
+  <script src="http://localhost:4000/js/vendor/jquery-3.3.1.min.js"></script>
   <script src="http://localhost:4000/js/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Eczar:400,600,800|Work+Sans:300,400,500,600,700" rel="stylesheet">
   <script src="https://use.typekit.net/lye5jyf.js"></script>
@@ -46,6 +46,18 @@
   ga('create', 'UA-100941412-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script src="https://unpkg.com/jquery-aniview@1.0.1/dist/jquery.aniview.js"
+integrity="sha384-zDA6q/t525x7f6KD/OaOe24vCxSPU3eraILc2NU+ZA7ISsc3ExQbj8PB56FRMq6H"
+crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+  var options = {
+      animateThreshold: 100,
+      scrollPollInterval: 20
+  }
+  $('.aniview').AniView(options);
+});
 </script>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -105,7 +117,6 @@
   <h1 class="logo"><a class="brand name" role="heading" href="http://localhost:4000/">Molly Pierce Design</a></h1>
 </nav>
 </header>
-<div id="white-gradient"></div>
 
 
 
@@ -147,24 +158,23 @@ $('.navbg').click(function() {
 
 </script>
 
-      <div class="container hero">
-        <div class="title">
-          &nbsp;
-        </div>
+      <div class="full-width">
+        <img src="images/mpd-photo-7.jpg" />
       </div>
       <div class="container flex">
-        <div class="one-third">
-          <div  id="headshot">
-            <a href="mailto:mollympierce@gmail.com">
-              <img src="http://localhost:4000/images/molly-pierce.jpg" />
-            </a>
-          </div>
-        </div>
         <div class="two-thirds">
-<p class="detail">About Me</p>
-<h1>Hello! I am an independent graphic and web designer in Corpus Christi, TX.</h1>
-  <div><p class="detail">Looking for a graphic designer?
-    I am available for:</p>
+          <div class="title">
+            <h1>Design worth celebrating.</h1>
+          </div>
+          <h5>I work with businesses, cultural institutions, hosts and hostesses to strengthen much-loved brands, promote fabulous events, and design stunning promotional pieces. Designing is the fun part! Make sure you enjoy it.</h5>
+          <h4><a href="http://localhost:4000/services">Learn more about my design services.</a></h4>
+        </div>
+        <div class="one-third">
+        </div>
+      </div>
+            <div class="container flex" style="margin-top: 5em;">
+              <div class="one-half">
+                <p class="detail">Services:</p>
   <h5 style="color: black;">Web Design<br />
     Graphic Design<br />
     Branding<br />
@@ -177,6 +187,7 @@ $('.navbg').click(function() {
     & more!
   </h4>
   </div>
+  <div class="one-half">
           <div class="clients top-block">
           <p>I've had the pleasure of partnering with some of Corpus Christi's finest businesses, including:</p>
           <p>&nbsp;</p>
@@ -235,15 +246,13 @@ $('.navbg').click(function() {
   </ul>
 
           </div>
-          <div id="right-button">
-            <a class="button" href="http://localhost:4000/work">View My Work</a><br />
-          </div>
-        </div>
+          <a href="" class="button" style="text-align: right;">View More</a>
       </div>
       <!-- <div class="container block">
         <div class="inner block" id="instafeed"></div>
       </div> -->
     </div>
+  </div>
   <footer role="contentinfo" id="site-footer" class="footer-container">
 	<ul class="footer-top">
 		<li><h2>Molly Pierce</h2></li>
