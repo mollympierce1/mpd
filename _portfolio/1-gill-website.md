@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Gill Landscape Nursery"
 collection: portfolio
-featured-image: /images/ccso-mockup-front.png
+featured-image: /images/gill-website-1.jpg
 services: "Website Design"
 ---
 
