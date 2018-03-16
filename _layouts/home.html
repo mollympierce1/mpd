@@ -2,18 +2,6 @@
 <html>
 
 {% include head.html %}
-<script>
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  5000);
-</script>
 
 <body id="js-body" class="home">
     {% include browser-upgrade.html %}
@@ -24,47 +12,38 @@ setInterval(function() {
           <img class="" src="images/MPD-best-photo.jpg"></img>
         </div>
         <div class="flex flex-wrap">
-          <div class="one-half">
-            <img src="/images/mpd-amst-booklet-5.png">
-            </div>
-          <div class="one-half" class="feature">
-            <div class="feature">
-              <h2>Graphic Design</h2>
-              <h4>Stationery, Booklets & Brochures, Promotional Materials, Events & Parties</h3>
-              <a class="button" href="{{ site.url }}/services.html">Graphic Design Services</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap ">
-          <div class="one-half">
-            <img src="/images/gill-website-1.jpg">
-            </div>
-          <div class="one-half feature">
-            <h2>Website Design</h2>
-            <h4>Blogs, Small Businesses, Events</h4>
-            <a class="button" href="{{ site.url }}/services.html">Website Design Services</a>
-          </div>
+          <script>
+          $("#slideshow > div:gt(0)").hide();
 
-        </div>
-        <div class="flex flex-wrap ">
-          <div class="one-half">
-            <img src="/images/amst-mockup-9.png">            </div>
-          <div class="one-half feature">
-            <h2>Branding & Identity</h2>
-            <h4>Logo Design, Brand Design, Creative Direction</h4>
-            <a class="button" href="{{ site.url }}/services.html">Branding & Identity Services</a>
-          </div>
-        </div>
-        <!--<div class="flex flex-wrap">
-          <div class="one-half"></div>
+          setInterval(function() {
+            $('#slideshow > div:first')
+              .fadeOut()
+              .next()
+              .fadeIn()
+              .end()
+              .appendTo('#slideshow');
+          },  1000);
+          </script>
           <div id="slideshow" class="one-half">
-            <div><img src="/images/mpd-photo-7.jpg"></div>
-            <div><img src="/images/mpd-ccso-poster-series.png"></div>
-            <div><img src="/images/mpd-poster-executive-surf-club2.png"></div>
-            <div><img src="/images/mpd-ccso-poster-series.png"></div>
-
+            <div><a  href="{{ site.url }}/work"><img src="/images/mpd-slider-1.jpg"></a></div>
+            <div><a  href="{{ site.url }}/work"><img src="/images/mpd-slider-2.jpg"></a></div>
+            <div><a  href="{{ site.url }}/work"><img src="/images/mpd-slider-3.jpg"></a></div>
+            <div><a  href="{{ site.url }}/work"><img src="/images/mpd-slider-4.jpg"></a></div>
+            <div><a  href="{{ site.url }}/work"><img src="/images/mpd-slider-5.jpg"></a></div>
+            <div><a  href="{{ site.url }}/work"><img src="/images/mpd-slider-6.jpg"></a></div>
           </div>
-        </div> -->
+        <div class="one-half" class="feature">
+          <div class="feature">
+            <h2>Graphic Design</h2>
+            <h4>Stationery, Booklets & Brochures, Promotional Materials, Events & Parties</h3>
+              <h2>Website Design</h2>
+              <h4>Blogs, Small Businesses, Events</h4>
+              <h2>Branding & Identity</h2>
+              <h4>Logo Design, Brand Design, Creative Direction</h4>
+            <a class="button" href="{{ site.url }}/services.html">More About My Design Services</a>
+          </div>
+        </div>
+      </div>
 </div>
 </div>
   {% include footer.html %}
