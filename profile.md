@@ -1,5 +1,5 @@
 ---
-layout: about-us
+layout: about-me
 permalink: /profile
 title: Profile
 ---
